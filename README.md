@@ -25,7 +25,7 @@ India's system for undertrial prisoners is fragmented, overcrowded, and under-re
 Our approach to benefit UTP’s involves the following methods:
 
 1.User-Friendly Application<br>
-2.Pro Bono Lawyer Matching <br>
+2.Pro Bono Lawyer Matching<br>
 3.Real-Time Monitoring Dashboard<br> 
 4.Authourized Access<br>
 5.Pre-Trained ChatBot<br>
