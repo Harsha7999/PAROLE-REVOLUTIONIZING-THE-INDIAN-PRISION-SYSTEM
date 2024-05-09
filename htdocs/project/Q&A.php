@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <title>Q&A: Undertrial Prisoners and Law & Justice</title>
+    <style>
+	 body {
+	       
+			background-image: url('q&a.jpg');
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+		      .dashboard-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #808080;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dashboard-button:hover {
+            background-color: #ff4500;
+        }
+				h1 {
+    background: #00CC99;
+    text-align: center;
+    font-size: 308px;
+    padding: 20px 1em;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-right: 35%;
+    cursor: pointer;
+    font-family: "Arial Black";
+}
+
+.dashboard-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #27c8a9;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dashboard-button:hover {
+    background-color: #030202;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: -200px;
+    background-color: #333;
+    color: #ff4500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: left 0.3s;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #32CD32; /* Highlight in orange when hovered */
+    color: #000; /* Change text color when hovered */
+    padding-left: 40px; /* Increase left padding */
+    padding-right: 40px; /* Increase right padding */
+}
+    .menu {
+    position: absolute;
+    top: 60px;
+    left: -200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    transition: left 0.3s;
+	}
+        .menu a {
+            display: block;
+            margin-bottom: 50px;
+            color: #fff;
+            text-decoration: none;
+        }
+    .menu a:hover {
+      background-color: #02f502;
+      padding: 10px;
+      border-radius: 25px;
+      color: #000;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+        .qa-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color:  00FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+			color: #DF0000;
+        }
+
+        .answer {
+            margin-bottom: 20px;
+			color: #39FF14;
+        }
+
+        .search-container {
+            width: 20%;
+            max-width: 200px;
+            padding: 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+        /* ... (your existing styles) ... */
+    </style>
+</head>
+<body>
+    <!-- Dashboard -->
+    <div class="dashboard-button" id="dashboard-button"><i class="fa-solid fa-bars"></i></div>
+    <div class="menu" id="menu">
+        <a href="register.php"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbspHome</a>
+        <a href="Login.php" target="_blank"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;&nbspLogin/Signup</a>
+        <a href="register.php" target="_blank"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbspNew Registration</a>
+        <a href="Q&A.php" target="_blank"><i class="fa-solid fa-question" style="color: #ffffff;">&nbsp;&nbsp;&nbsp</i>Q & A</a>
+        <a href="about.php" target="_blank"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;&nbspAbout</a>
+       
+    </div>
+
+    <div class="qa-container">
+	<div class="qa">
+	
+            <div class="question">Q1: Who are undertrial prisoners?</div>
+            <div class="answer">A1: Undertrial prisoners are individuals who have been accused of committing a crime but have not yet been convicted by a court of law. They are awaiting trial and have not been sentenced.</div>
+        </div>
+
+        <div class="qa">
+            <div class="question">Q2: What rights do undertrial prisoners have?</div>
+            <div class="answer">A2: Undertrial prisoners have several legal rights, including the right to a fair trial, the right to legal representation, the right to remain silent, and the right to be treated with dignity and respect. They are presumed innocent until proven guilty.</div>
+        </div>
+
+        <div class="qa">
+            <div class="question">Q3: How long can undertrial prisoners be held without trial?</div>
+            <div class="answer">A3: The duration for which an undertrial prisoner can be held without trial varies by country and legal jurisdiction. In many countries, there are legal limits on the maximum period an individual can be held as an undertrial without facing trial.</div>
+        </div>
+
+        <div class="qa">
+            <div class="question">Q4: What is the role of the legal system in ensuring justice for undertrial prisoners?</div>
+            <div class="answer">A4: The legal system plays a crucial role in ensuring justice for undertrial prisoners by providing them with a fair and timely trial, legal representation, and protection of their rights. It is essential to uphold the principles of justice and the rule of law.</div>
+        </div>
+<div class="qa">
+            <div class="question">Q5: What is the difference between an undertrial prisoner and a convicted prisoner?</div>
+            <div class="answer">A5: An undertrial prisoner is someone who has been accused of a crime but has not yet been convicted by a court. A convicted prisoner, on the other hand, has been found guilty of a crime and has been sentenced by a court.</div>
+        </div>
+		
+		 		   <div class="qa">
+            <div class="question">Q6: Can undertrial prisoners be released on bail?</div>
+            <div class="answer">A6: Yes, undertrial prisoners can be released on bail if certain conditions are met. Bail is a legal process that allows a person accused of a crime to be released from custody while awaiting trial, provided they meet the bail conditions set by the court.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q7: What are the challenges faced by undertrial prisoners in the justice system?</div>
+            <div class="answer">A7: Undertrial prisoners often face challenges such as overcrowded jails, delays in the legal process, inadequate legal representation, and prolonged detention. These challenges can impact their access to justice and their rights.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q8: What is the responsibility of the state regarding undertrial prisoners?</div>
+            <div class="answer">A8: The state has a responsibility to protect the rights of undertrial prisoners, ensure they receive a fair trial, and provide humane conditions of detention. The state must also work to prevent unnecessary pretrial detention and address systemic issues in the justice system.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q9: Are there international human rights standards for the treatment of undertrial prisoners?</div>
+            <div class="answer">A9: Yes, there are international human rights standards, such as the United Nations Standard Minimum Rules for the Treatment of Prisoners (the Mandela Rules), that provide guidelines for the treatment of undertrial prisoners and their rights.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q10: How can the justice system be reformed to address the issues faced by undertrial prisoners?</div>
+            <div class="answer">A10: Justice system reforms may include measures to expedite trials, improve legal aid services, reduce pretrial detention, and address issues related to prison conditions. These reforms aim to uphold the principles of justice and protect the rights of undertrial prisoners.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q11: What are the common reasons for undertrial prisoners' prolonged detention?</div>
+            <div class="answer">A11: Prolonged detention of undertrial prisoners can be due to factors like court backlog, inadequate legal representation, delays in evidence collection, and administrative inefficiencies in the justice system</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q12: How can the rights of undertrial prisoners be protected during their time in detention?</div>
+            <div class="answer">A12: The rights of undertrial prisoners can be protected by ensuring access to legal counsel, regular review of detention, adequate healthcare, and fair treatment while in custody.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q13: What is the role of legal aid organizations in assisting undertrial prisoners?</div>
+            <div class="answer">A13: Legal aid organizations play a crucial role in providing free or low-cost legal representation to undertrial prisoners who may not afford private legal counsel. They help ensure that individuals have a fair trial.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q14: Can undertrial prisoners be released if they are found not guilty during the trial?</div>
+            <div class="answer">A14: Yes, if an undertrial prisoner is found not guilty during the trial, they should be released immediately. They are entitled to their freedom as they have not been convicted of any crime.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q15: Are there international treaties addressing the rights of undertrial prisoners?</div>
+            <div class="answer">A15: Yes, international treaties such as the International Covenant on Civil and Political Rights (ICCPR) and the United Nations Standard Minimum Rules for the Treatment of Prisoners (the Mandela Rules) contain provisions related to the rights and treatment of undertrial prisoners.</div>
+        </div>
+		
+				   <div class="qa">
+            <div class="question">Q16: What measures can be taken to reduce the overcrowding of prisons with undertrial prisoners?</div>
+            <div class="answer">A16: To reduce prison overcrowding, measures may include expediting trials, implementing alternatives to detention, and reviewing and revising bail policies to allow for the release of non-violent undertrial prisoners.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q17: What is the importance of transparency and accountability in the justice system when dealing with undertrial prisoners?</div>
+            <div class="answer">A17: Transparency and accountability are crucial to ensure that the rights of undertrial prisoners are protected. It helps prevent abuse, corruption, and ensures a fair and just legal process.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q18: What rights do undertrial prisoners have during their detention?</div>
+            <div class="answer">A18: Undertrial prisoners have rights, including the right to legal representation, the right to a fair trial, the right to be treated with dignity, and the right to access medical care.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q19: Can undertrial prisoners be subjected to torture or ill-treatment?</div>
+            <div class="answer">A19: No, under no circumstances should undertrial prisoners or any prisoners be subjected to torture or ill-treatment. Such actions are violations of human rights and international law.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q20: Are there programs to rehabilitate undertrial prisoners?</div>
+            <div class="answer">A20: Yes, some prison systems offer rehabilitation programs for undertrial prisoners, including education, vocational training, and counseling to help them reintegrate into society upon release.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q21: How can the public contribute to the improvement of conditions for undertrial prisoners?</div>
+            <div class="answer">A21: The public can contribute by advocating for reforms in the justice system, supporting organizations that provide legal aid, and raising awareness about the rights and challenges of undertrial prisoners.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q22: What measures can be taken to ensure speedy trials for undertrial prisoners?</div>
+            <div class="answer">A22: Measures to ensure speedy trials may include appointing more judges, improving case management, and implementing technology to expedite court proceedings.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q23: Can undertrial prisoners be held in solitary confinement?</div>
+            <div class="answer">A23: Solitary confinement should be used sparingly and only for specific reasons, such as ensuring the safety of the prisoner or others. Prolonged or arbitrary use of solitary confinement is considered inhumane.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q24: What is the role of NGOs and civil society in advocating for the rights of undertrial prisoners?</div>
+            <div class="answer">A24: NGOs and civil society organizations play a vital role in monitoring prison conditions, advocating for policy changes, and providing support to undertrial prisoners and their families.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q25: What legal rights do undertrial prisoners have regarding bail?</div>
+            <div class="answer">A25: Undertrial prisoners have the right to apply for bail, and the court will consider factors like the nature of the offense, flight risk, and public safety when deciding on bail.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q26: How do pretrial detention practices vary between different countries?</div>
+            <div class="answer">A26: Pretrial detention practices can vary widely between countries due to differences in legal systems, cultural norms, and resources allocated to the justice system.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q27: What are the consequences of prolonged pretrial detention on individuals and their families?</div>
+            <div class="answer">A27: Prolonged pretrial detention can lead to psychological and emotional distress for individuals and financial hardships for their families due to loss of income and legal expenses.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q28: Are there international guidelines for the treatment of undertrial prisoners?</div>
+            <div class="answer">A28: Yes, international guidelines like the Bangkok Rules provide standards for the treatment of women prisoners, including those in pretrial detention.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q29: What role do judges play in ensuring the rights of undertrial prisoners?</div>
+            <div class="answer">A29: Judges play a crucial role in upholding the rights of undertrial prisoners by ensuring fair proceedings, reviewing detention regularly, and safeguarding due process.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q30: How can the use of electronic monitoring benefit undertrial prisoners?</div>
+            <div class="answer">A30: Electronic monitoring, such as ankle bracelets, can be an alternative to incarceration, allowing undertrial prisoners to await trial at home while being monitored, thus reducing the burden on prisons.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q31: Are there efforts to reform bail systems to make them more equitable?</div>
+            <div class="answer">A31: Yes, many jurisdictions are reforming their bail systems to address issues of wealth-based disparities and ensure that bail decisions are fair and based on risk assessment.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q32: What role can technology play in expediting legal processes for undertrial prisoners?</div>
+            <div class="answer">A32: Technology can help expedite legal processes through electronic filing, video conferencing for hearings, and case management systems, reducing delays in court proceedings.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q33: How can the public support organizations working to improve the rights of undertrial prisoners?</div>
+            <div class="answer">A33: The public can support such organizations through donations, volunteering, and raising awareness about the issues faced by undertrial prisoners.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q34: What are the implications of wrongful pretrial detention on the criminal justice system?</div>
+            <div class="answer">A34: Wrongful pretrial detention can undermine public trust in the justice system, lead to legal challenges, and result in compensation claims against the state.</div>
+        </div>
+		
+						   <div class="qa">
+            <div class="question">Q35: What percentage of the total prison population consists of undertrial prisoners globally?</div>
+            <div class="answer">A35: India has one of the highest numbers of undertrial prisoners in the world, with over 280,000 individuals in this category.</div>
+        </div>
+
+        <!-- Your Q&A content here (as you have it) -->
+    </div>
+
+    <div class="search-container">
+        <input type="text" class="search-input" id="search-input" placeholder="Search...">
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const qaQuestions = document.querySelectorAll('.question');
+		    const menuButton = document.getElementById('menu-button');
+     
+
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+
+            qaQuestions.forEach((question) => {
+                const text = question.textContent.toLowerCase();
+                const containsTerm = text.includes(searchTerm);
+                if (containsTerm) {
+                    // Highlight the matched term
+                    const highlightedText = text.replace(searchTerm, `<span class="highlight">${searchTerm}</span>`);
+                    question.innerHTML = highlightedText;
+                } else {
+                    // Remove highlighting if not matched
+                    question.innerHTML = text;
+                }
+                question.parentElement.style.display = containsTerm ? 'block' : 'none';
+            });
+        });
+
+        // Dashboard functionality (same as in your previous code)
+        const dashboardButton = document.getElementById('dashboard-button');
+        const menu = document.getElementById('menu');
+        
+        dashboardButton.addEventListener('click', () => {
+            if (menu.style.left === '0px') {
+                menu.style.left = '-200px';
+            } else {
+                menu.style.left = '0px';
+            }
+        });
+    </script>
+</body>
+</html>
