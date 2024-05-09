@@ -26,22 +26,22 @@ India's system for undertrial prisoners is fragmented, overcrowded, and under-re
 # MERITS
 Our approach to benefit UTP’s involves the following methods:
 
-*User-Friendly Application<br>
-Pro Bono Lawyer Matching<br>
-Real-Time Monitoring Dashboard<br>
-Authourized Access<br>
-Virtual Sessions<br>
-Providing list of Rehabilition Centres<br>
-Pre-Trained ChatBot<br>
+1.User-Friendly Application<br>
+2.Pro Bono Lawyer Matching<br>
+3.Real-Time Monitoring Dashboard<br>
+4.Authourized Access<br>
+5.Virtual Sessions<br>
+6.Providing list of Rehabilition Centres<br>
+7.Pre-Trained ChatBot<br>
 
 # SOFTWARES REQUIRED FOR IMPLEMENTATION
 
-HTML (Hyper-text Markup language)<br>
-CSS (Cascading Style Sheets)<br>
-JavaScript<br>
-Python<br>
-Mongo BD<br>
-Pre-Trained ChatBot<br>
+1.HTML (Hyper-text Markup language)<br>
+2.CSS (Cascading Style Sheets)<br>
+3.JavaScript<br>
+4.Python<br>
+5.Mongo BD<br>
+6.Pre-Trained ChatBot<br>
 
 # CONCLUSION
 
