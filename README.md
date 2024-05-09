@@ -19,7 +19,7 @@ India's system for undertrial prisoners is fragmented, overcrowded, and under-re
 **4.Lack of rehabilitation programs:** Undertrial prisoners often do not have access to rehabilitation programs. These programs can help them to learn new skills, get their GED, and prepare for reintegration into society after their release.
 
 # PROPOSED SYSTEM CHART
-![image](https://github.com/Harsha7999/PAROLE-REVOLUTIONIZING-THE-INDIAN-PRISION-SYSTEM/assets/138028961/13d98f56-ca41-4789-bf0e-081eec1534a6)
+![image](https://github.com/Harsha7999/PAROLE-REVOLUTIONIZING-THE-INDIAN-PRISION-SYSTEM/assets/138028961/7f3899c9-9dd8-4b4b-9b43-3d9de756a4f1)
 
 # MERITS
 Our approach to benefit UTP’s involves the following methods:
