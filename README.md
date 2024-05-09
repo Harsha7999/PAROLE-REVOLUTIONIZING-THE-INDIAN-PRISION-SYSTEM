@@ -13,10 +13,10 @@ India's system for undertrial prisoners is fragmented, overcrowded, and under-re
 
 # DE-MERITS OF THE EXISTING SYSTEM
 
-**1.Lack of access to legal aid:** Undertrial prisoners often do not have access to legal aid, which means that they cannot afford to hire a lawyer to represent them in court. This can make it difficult for them to get bail or to defend themselves against the charges against them.
-**2.Case Delays:** Manual and paper-based processes can lead to delays in case processing, court hearings, and the resolution of legal matters, which can result in prolonged pretrial detention periods.
-**3.Lack of transparency and accountability:** There is no way to track the status of undertrial prisoners or to ensure that they are treated fairly. This can lead to abuse and neglect.
-**4.Lack of rehabilitation programs:** Undertrial prisoners often do not have access to rehabilitation programs. These programs can help them to learn new skills, get their GED, and prepare for reintegration into society after their release.
+“*”**1.Lack of access to legal aid:** Undertrial prisoners often do not have access to legal aid, which means that they cannot afford to hire a lawyer to represent them in court. This can make it difficult for them to get bail or to defend themselves against the charges against them.
+“*”**2.Case Delays:** Manual and paper-based processes can lead to delays in case processing, court hearings, and the resolution of legal matters, which can result in prolonged pretrial detention periods.
+“*”**3.Lack of transparency and accountability:** There is no way to track the status of undertrial prisoners or to ensure that they are treated fairly. This can lead to abuse and neglect.
+“*”**4.Lack of rehabilitation programs:** Undertrial prisoners often do not have access to rehabilitation programs. These programs can help them to learn new skills, get their GED, and prepare for reintegration into society after their release.
 
 # PROPOSED SYSTEM CHART
 ![image](https://github.com/Harsha7999/PAROLE-REVOLUTIONIZING-THE-INDIAN-PRISION-SYSTEM/assets/138028961/7f3899c9-9dd8-4b4b-9b43-3d9de756a4f1)
