@@ -34,12 +34,12 @@ Our approach to benefit UTP’s involves the following methods:
 
 # SOFTWARES REQUIRED FOR IMPLEMENTATION
 
-1. HTML (Hyper-text Markup language)<br>
-2. CSS (Cascading Style Sheets)<br>
-3. JavaScript<br>
-4. Python<br>
-5. Mongo BD<br>
-6. Pre-Trained ChatBot<br>
+HTML (Hyper-text Markup language)<br>
+CSS (Cascading Style Sheets)<br>
+JavaScript<br>
+Python<br>
+Mongo BD<br>
+Pre-Trained ChatBot<br>
 
 # CONCLUSION
 
