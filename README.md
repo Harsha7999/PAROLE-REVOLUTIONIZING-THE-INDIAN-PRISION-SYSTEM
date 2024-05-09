@@ -27,10 +27,10 @@ Our approach to benefit UTP’s involves the following methods:
 User-Friendly Application<br>
 Pro Bono Lawyer Matching<br>
 Real-Time Monitoring Dashboard<br> 
-Pre-Trained ChatBot<br>
 Authourized Access<br> 
 Virtual Sessions<br>
 Providing list of Rehabilition Centres<br>
+Pre-Trained ChatBot<br>
 
 # SOFTWARES REQUIRED FOR IMPLEMENTATION
 
