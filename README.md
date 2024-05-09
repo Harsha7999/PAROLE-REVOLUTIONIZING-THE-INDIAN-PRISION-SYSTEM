@@ -38,7 +38,7 @@ Our approach to benefit UTP’s involves the following methods:
 2. CSS (Cascading Style Sheets)<br>
 3. JavaScript<br>
 4. Python<br>
-5. Mongo BD <br>
+5. Mongo BD<br>
 6. Pre-Trained ChatBot<br>
 
 # CONCLUSION
