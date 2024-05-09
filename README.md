@@ -11,3 +11,41 @@ India's system for undertrial prisoners is fragmented, overcrowded, and under-re
 
 ![image](https://github.com/Harsha7999/PAROLE-REVOLUTIONIZING-THE-INDIAN-PRISION-SYSTEM/assets/138028961/509d8ccd-2c88-4576-ba85-6c80f7b283a5)
 
+# DE-MERITS OF THE EXISTING SYSTEM
+
+**1.Lack of access to legal aid:** Undertrial prisoners often do not have access to legal aid, which means that they cannot afford to hire a lawyer to represent them in court. This can make it difficult for them to get bail or to defend themselves against the charges against them.
+**2.Case Delays:** Manual and paper-based processes can lead to delays in case processing, court hearings, and the resolution of legal matters, which can result in prolonged pretrial detention periods.
+**3.Lack of transparency and accountability:** There is no way to track the status of undertrial prisoners or to ensure that they are treated fairly. This can lead to abuse and neglect.
+**4.Lack of rehabilitation programs:** Undertrial prisoners often do not have access to rehabilitation programs. These programs can help them to learn new skills, get their GED, and prepare for reintegration into society after their release.
+
+# PROPOSED SYSTEM CHART
+![image](https://github.com/Harsha7999/PAROLE-REVOLUTIONIZING-THE-INDIAN-PRISION-SYSTEM/assets/138028961/13d98f56-ca41-4789-bf0e-081eec1534a6)
+
+# MERITS
+Our approach to benefit UTP’s involves the following methods:
+
+1.User-Friendly Application
+2.Pro Bono Lawyer Matching 
+3.Real-Time Monitoring Dashboard 
+4.Authourized Access
+5.Pre-Trained ChatBot
+6.Virtual Sessions
+7.Providing list of Rehabilition Centres
+
+# SOFTWARES REQUIRED FOR IMPLEMENTATION
+
+1.HTML (Hyper-text Markup language)
+2. CSS (Cascading Style Sheets)
+3. JavaScript
+4. Python
+5. Mongo BD 
+6. Pre-Trained ChatBot
+
+# CONCLUSION
+
+1.The outcome of our application is to provide UTPs with fair and transparent access to court proceedings by connecting them with pro bono lawyers. 
+2.Additionally, we aim to raise awareness among UTPs about their legal rights and provisions. This initiative represents a significant step towards addressing the challenges faced by UTPs and fostering a more equitable and transparent criminal justice system. 
+3.Through this application, we aspire to make a positive impact on the lives of UTPs and contribute to the larger goal of achieving social justice in India.
+4.Our legal aid application represents a significant stride in addressing the challenges faced by UTPs. 
+5.By connecting UTPs with pro bono lawyers and promoting awareness of their rights, we aim to bridge the gap in the legal process, ensuring fairness and justice for all. 
+6.This initiative underscores our commitment to fostering a more equitable and transparent criminal justice system, ultimately leading to a positive transformation in the lives of UTPs and contributing to the broader cause of social justice in India.
