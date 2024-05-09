@@ -48,6 +48,6 @@ Our approach to benefit UTP’s involves the following methods:
 1.The outcome of our application is to provide UTPs with fair and transparent access to court proceedings by connecting them with pro bono lawyers.<br>
 2.Additionally, we aim to raise awareness among UTPs about their legal rights and provisions. This initiative represents a significant step towards addressing the challenges faced by UTPs and fostering a more equitable and transparent criminal justice system.<br>
 3.Through this application, we aspire to make a positive impact on the lives of UTPs and contribute to the larger goal of achieving social justice in India.<br>
-4.Our legal aid application represents a significant stride in addressing the challenges faced by UTPs.<br> 
+4.Our legal aid application represents a significant stride in addressing the challenges faced by UTPs.<br>
 5.By connecting UTPs with pro bono lawyers and promoting awareness of their rights, we aim to bridge the gap in the legal process, ensuring fairness and justice for all.<br>
 6.This initiative underscores our commitment to fostering a more equitable and transparent criminal justice system, ultimately leading to a positive transformation in the lives of UTPs and contributing to the broader cause of social justice in India.<br>
