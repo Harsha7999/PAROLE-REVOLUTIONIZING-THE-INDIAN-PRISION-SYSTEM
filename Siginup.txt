@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Visitor Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+			background-image: url('q&a.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(255,255,255,0.5)
+            margin: 0;
+            padding: 0;
+            display: flex; /* Added flexbox layout */
+        }
+
+        .dashboard {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            background:rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 308px;
+            padding: 20px 1em;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: "Arial Black";
+        }
+
+        .dashboard-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dashboard-button:hover {
+            background-color: #ff4500;
+        }
+
+        .menu {
+            position: absolute;
+            top: 60px;
+            left: -200px;
+            background-color: #333;
+            color: #ff4500;
+            padding: 10px;
+            border-radius: 5px;
+            transition: left 0.3s;
+        }
+
+        .menu a {
+            display: block;
+            margin-bottom: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #32CD32;
+            color: #000;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 6rem;
+            flex-grow: 1; /* Allow flex items to grow */
+        }
+.form {
+      background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: #00FFFFFF;
+    width: 45%;
+    margin-bottom: 20px;
+}
+        .form h2 {
+            text-align: evenly;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="tel"],
+        .form select,
+        .form textarea {
+     width: 98%;
+    padding: 10px;
+    margin-bottom: 9px;
+    border: 1px solid gray;
+    border-radius: 50px;;
+        }
+
+        .form button {
+    background-color: #18bf00;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin: 22px auto;
+	}
+        .form button:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="dashboard-button" id="dashboard-button">MENU</div>
+    <div class="menu" id="menu">
+        <a href="prisoner.html">Home</a>
+        <a href="Login.html"target="_blank">Login</a>
+        <a href="Signup.html"target="_blank">Signup</a>
+        <a href="jails.html"target="_blank">jails</a>
+        <a href="Q&A.html"target="_blank">Q & A</a>
+        <a href="ChatBot.html" target="_blank">ChatBot</a>
+        <a href="notification.html" target="_blank">Notification Center</a>
+        <a href="about.html"target="_blank">About</a>
+        <div id="welcome-message">
+            <!-- The "Welcome to my website" message will be displayed here -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <h2>Prisoner Details</h2>
+            <form action="signup.html" method="POST">
+			 <label for="name">Name:</label>
+			  
+                <input type="text" name="Enter Your Name" placeholder="Enter Your Name" required>
+				 <label for="Address">Address:</label>
+                <input type="text" name="Enter Full Address" placeholder="Enter Full Address" required>
+          <label for="gender">Gender:</label>
+<select name="gender" id="gender" required>
+    <option value="-Select-">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+
+               <br> <label for="Age">Age:</label></br>
+                   <input type="text" name="age" placeholder="Age" required>
+
+			              <br> <label for="Select State:">Select State:</label></br>
+			            <select name="select-state" required class="form-input">
+                <option value="select-state">Select State</option>	
+		     <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option>
+			
+			        </select>
+		 Jail Selection
+
+           <select name="Jail Selection" required class="form-input">
+		    <option value="select-jail">Select Jail</option>	
+            <optgroup label="Andhra Pradesh">
+
+                <!-- Central Jails -->
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Central Jail, Visakhapatnam">Central Jail, Visakhapatnam</option>
+<option value="Central Jail, Rajahmundry">Central Jail, Rajahmundry</option>
+<option value="Central Jail, Guntur">Central Jail, Guntur</option>
+<option value="Central Jail, Tirupati">Central Jail, Tirupati</option>
+<option value="Central Jail, Nellore">Central Jail, Nellore</option>
+<option value="Central Jail, Kadapa">Central Jail, Kadapa</option>
+<option value="Central Jail, Anantapur">Central Jail, Anantapur</option>
+
+<!-- District Jails -->
+<option value="Srikakulam District Jail, Srikakulam">Srikakulam District Jail, Srikakulam</option>
+<option value="Vizianagaram District Jail, Vizianagaram">Vizianagaram District Jail, Vizianagaram</option>
+<option value="East Godavari District Jail, Kakinada">East Godavari District Jail, Kakinada</option>
+<option value="West Godavari District Jail, Eluru">West Godavari District Jail, Eluru</option>
+<option value="Krishna District Jail, Machilipatnam">Krishna District Jail, Machilipatnam</option>
+<option value="Guntur District Jail, Guntur">Guntur District Jail, Guntur</option>
+<option value="Prakasam District Jail, Ongole">Prakasam District Jail, Ongole</option>
+<option value="Nellore District Jail, Nellore">Nellore District Jail, Nellore</option>
+<option value="Chittoor District Jail, Chittoor">Chittoor District Jail, Chittoor</option>
+<option value="Kadapa District Jail, Kadapa">Kadapa District Jail, Kadapa</option>
+<option value="Kurnool District Jail, Kurnool">Kurnool District Jail, Kurnool</option>
+<option value="Anantapur District Jail, Anantapur">Anantapur District Jail, Anantapur</option>
+
+<!-- Sub-Jails -->
+<option value="Srikakulam Sub-Jail, Srikakulam">Srikakulam Sub-Jail, Srikakulam</option>
+<option value="Vizianagaram Sub-Jail, Vizianagaram">Vizianagaram Sub-Jail, Vizianagaram</option>
+<option value="Palasa Sub-Jail, Palasa">Palasa Sub-Jail, Palasa</option>
+<option value="Parvathipuram Sub-Jail, Parvathipuram">Parvathipuram Sub-Jail, Parvathipuram</option>
+<option value="Bobbili Sub-Jail, Bobbili">Bobbili Sub-Jail, Bobbili</option>
+<option value="Amadalavalasa Sub-Jail, Amadalavalasa">Amadalavalasa Sub-Jail, Amadalavalasa</option>
+<option value="Kakinada Sub-Jail, Kakinada">Kakinada Sub-Jail, Kakinada</option>
+<option value="Rajahmundry Sub-Jail, Rajahmundry">Rajahmundry Sub-Jail, Rajahmundry</option>
+<option value="Amalapuram Sub-Jail, Amalapuram">Amalapuram Sub-Jail, Amalapuram</option>
+<option value="Tuni Sub-Jail, Tuni">Tuni Sub-Jail, Tuni</option>
+<option value="Eluru Sub-Jail, Eluru">Eluru Sub-Jail, Eluru</option>
+<option value="Gudivada Sub-Jail, Gudivada">Gudivada Sub-Jail, Gudivada</option>
+<option value="Narsapur Sub-Jail, Narsapur">Narsapur Sub-Jail, Narsapur</option>
+<option value="Guntur Sub-Jail, Guntur">Guntur Sub-Jail, Guntur</option>
+<option value="Tenali Sub-Jail, Tenali">Tenali Sub-Jail, Tenali</option>
+<option value="Narasaraopet Sub-Jail, Narasaraopet">Narasaraopet Sub-Jail, Narasaraopet</option>
+<option value="Ongole Sub-Jail, Ongole">Ongole Sub-Jail, Ongole</option>
+<option value="Chirala Sub-Jail, Chirala">Chirala Sub-Jail, Chirala</option>
+<option value="Nellore Sub-Jail, Nellore">Nellore Sub-Jail, Nellore</option>
+<option value="Gudur Sub-Jail, Gudur">Gudur Sub-Jail, Gudur</option>
+<option value="Chittoor Sub-Jail, Chittoor">Chittoor Sub-Jail, Chittoor</option>
+<option value="Tirupati Sub-Jail, Tirupati">Tirupati Sub-Jail, Tirupati</option>
+<option value="Kadapa Sub-Jail, Kadapa">Kadapa Sub-Jail, Kadapa</option>
+<option value="Proddatur Sub-Jail, Proddatur">Proddatur Sub-Jail, Proddatur</option>
+<option value="Kurnool Sub-Jail, Kurnool">Kurnool Sub-Jail, Kurnool</option>
+<option value="Anantapur Sub-Jail, Anantapur">Anantapur Sub-Jail, Anantapur</option>
+<option value="Hindupur Sub-Jail, Hindupur">Hindupur Sub-Jail, Hindupur</option>
+<option value="Dharmavaram Sub-Jail, Dharmavaram">Dharmavaram Sub-Jail, Dharmavaram</option>
+
+<option value="District Jail Tezu, Tezu, Lohit District">District Jail Tezu, Tezu, Lohit District</option>
+<option value="Sub Jail Changlang, Changlang District, Changlang">Sub Jail Changlang, Changlang District, Changlang</option>
+<option value="Sub Jail Khonsa, Khonsa District Tirap">Sub Jail Khonsa, Khonsa District Tirap</option>
+ </optgroup>
+ 
+<optgroup label="Arunachal Pradesh">Arunachal Pradesh</optgroup> 
+ 
+  <option value="District Jail, Jully Itanagar">District Jail, Jully Itanagar</option>
+  <option value="District Jail, Tezu">District Jail, Tezu</option>
+  </optgroup>
+
+<optgroup label="Assam">Assam</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Guwahati">Central Jail, Guwahati</option>
+    <option value="Central Jail, Tezpur">Central Jail, Tezpur</option>
+    <option value="Central Jail, Silchar">Central Jail, Silchar</option>
+    <option value="Central Jail, Dibrugarh">Central Jail, Dibrugarh</option>
+    <option value="Central Jail, Jorhat">Central Jail, Jorhat</option>
+    <option value="Central Jail, Nagaon">Central Jail, Nagaon</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Nalbari">District Jail, Nalbari</option>
+    <option value="District Jail, Barpeta">District Jail, Barpeta</option>
+    <option value="District Jail, Kokrajhar">District Jail, Kokrajhar</option>
+    <option value="District Jail, Dhubri">District Jail, Dhubri</option>
+    <option value="District Jail, Goalpara">District Jail, Goalpara</option>
+    <option value="District Jail, Hailakandi">District Jail, Hailakandi</option>
+    <option value="District Jail, Karimganj">District Jail, Karimganj</option>
+    <option value="District Jail, North Lakhimpur">District Jail, North Lakhimpur</option>
+    <option value="District Jail, Sivasagar">District Jail, Sivasagar</option>
+    <option value="District Jail, Dhemaji">District Jail, Dhemaji</option>
+    <option value="District Jail, Udalguri">District Jail, Udalguri</option>
+  </optgroup>
+
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Nagaon">Special Jail, Nagaon</option>
+  </optgroup>
+
+<optgroup label="Bihar">Bihar</optgroup>
+<!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Beur, Patna">Central Jail, Beur, Patna</option>
+    <option value="Central Jail, Buxar">Central Jail, Buxar</option>
+    <option value="Central Jail, Gaya">Central Jail, Gaya</option>
+    <option value="Central Jail, Motihari">Central Jail, Motihari</option>
+    <option value="Central Jail, Purnea">Central Jail, Purnea</option>
+    <option value="Special Central Jail, Bhagalpur">Special Central Jail, Bhagalpur</option>
+    <option value="Shahid Khudi Ram Bose Central Jail, Bhagalpur">Shahid Khudi Ram Bose Central Jail, Bhagalpur</option>
+    <option value="Shahid Jubba Sahni Central Jail, Bhagalpur">Shahid Jubba Sahni Central Jail, Bhagalpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Bettiah">District Jail, Bettiah</option>
+    <option value="District Jail, Sitamarhi">District Jail, Sitamarhi</option>
+    <option value="District Jail, Phulwarisharif, Patna">District Jail, Phulwarisharif, Patna</option>
+    <option value="District Jail, Biharsharif">District Jail, Biharsharif</option>
+    <option value="District Jail, Hajipur">District Jail, Hajipur</option>
+    <option value="District Jail, Bhabhua, Kaimur">District Jail, Bhabhua, Kaimur</option>
+    <option value="District Jail, Sasaram">District Jail, Sasaram</option>
+    <option value="District Jail, Bikramganj, Rohtas">District Jail, Bikramganj, Rohtas</option>
+    <option value="District Jail, Arra">District Jail, Arra</option>
+    <option value="District Jail, Gopalganj">District Jail, Gopalganj</option>
+    <option value="District Jail, Siwan">District Jail, Siwan</option>
+    <option value="District Jail, Chhapra">District Jail, Chhapra</option>
+    <option value="District Jail, Darbhanga">District Jail, Darbhanga</option>
+    <option value="District Jail, Madhubani">District Jail, Madhubani</option>
+    <option value="District Jail, Samastipur">District Jail, Samastipur</option>
+    <option value="District Jail, Sitamarhi">District Jail, Sitamarhi</option>
+    <option value="District Jail, Sheohar">District Jail, Sheohar</option>
+    <option value="District Jail, Khagaria">District Jail, Khagaria</option>
+    <option value="District Jail, Begusarai">District Jail, Begusarai</option>
+    <option value="District Jail, Banka">District Jail, Banka</option>
+    <option value="District Jail, Sheikhpura">District Jail, Sheikhpura</option>
+    <option value="District Jail, Lakhisarai">District Jail, Lakhisarai</option>
+    <option value="District Jail, Jamui">District Jail, Jamui</option>
+    <option value="District Jail, Munger">District Jail, Munger</option>
+  
+  
+          <option value="Sub Jail, Alot">Sub Jail, Alot</option>
+        <option value="Sub Jail, Ambah">Sub Jail, Ambah</option>
+        <option value="Sub Jail, Anuppur">Sub Jail, Anuppur</option>
+        <!-- Add the new sub jails here -->
+        <option value="Sub Jail, Barh, Patna">Sub Jail, Barh, Patna</option>
+        <option value="Sub Jail, Danapur, Patna">Sub Jail, Danapur, Patna</option>
+        <option value="Sub Jail, Masaurhi, Patna">Sub Jail, Masaurhi, Patna</option>
+        <option value="Sub Jail, Hilsa, Nalanda">Sub Jail, Hilsa, Nalanda</option>
+        <option value="Sub Jail, Benipur, Darbhanga">Sub Jail, Benipur, Darbhanga</option>
+        <option value="Sub Jail, Jhanjharpur, Madhubani">Sub Jail, Jhanjharpur, Madhubani</option>
+        <option value="Sub Jail, Rosera, Samastipur">Sub Jail, Rosera, Samastipur</option>
+        <option value="Sub Jail, Dalsinghsarai, Samastipur">Sub Jail, Dalsinghsarai, Samastipur</option>
+        <option value="Sub Jail, Nawgachhia, Bhagalpur">Sub Jail, Nawgachhia, Bhagalpur</option>
+        <option value="Sub Jail, Bikramganj, Rohtas">Sub Jail, Bikramganj, Rohtas</option>
+        <option value="Sub Jail, Buxar">Sub Jail, Buxar</option>
+        <option value="Sub Jail, Bagaha, West Champaran">Sub Jail, Bagaha, West Champaran</option>
+        <option value="Sub Jail, Udakishanganj, Madhepura">Sub Jail, Udakishanganj, Madhepura</option>
+    </optgroup>
+	
+	
+<optgroup label="Chhattisgarh">Chhattisgarh</optgroup>
+<option value="Central Jail Raipur">Central Jail Raipur</option>
+<option value="Central Jail Jagdalpur">Central Jail Jagdalpur</option>
+<option value="Central Jail Bilaspur">Central Jail Bilaspur</option>
+<option value="Central Jail Ambikapur">Central Jail Ambikapur</option>
+<option value="Central Jail Durg">Central Jail Durg</option>
+<option value="District Jail Mahasamund">District Jail Mahasamund</option>
+ </optgroup>
+
+<optgroup label="Gujarat">Gujarat</optgroup>
+    <option value="Central Jail, Ahmedabad">Central Jail, Ahmedabad</option>
+    <option value="Central Jail, Vadodara">Central Jail, Vadodara</option>
+    <option value="Central Jail, Rajkot">Central Jail, Rajkot</option>
+    <option value="Central Jail, Lajpore">Central Jail, Lajpore</option>
+    <option value="District Jail, Surat">District Jail, Surat</option>
+    <option value="District Jail, Bharuch">District Jail, Bharuch</option>
+    <option value="District Jail, Bhavnagar">District Jail, Bhavnagar</option>
+    <option value="District Jail, Dahod">District Jail, Dahod</option>
+    <option value="District Jail, Gandhinagar">District Jail, Gandhinagar</option>
+    <option value="District Jail, Jamnagar">District Jail, Jamnagar</option>
+    <option value="District Jail, Junagadh">District Jail, Junagadh</option>
+    <option value="District Jail, Kheda">District Jail, Kheda</option>
+    <option value="District Jail, Kutch">District Jail, Kutch</option>
+    <option value="District Jail, Mehsana">District Jail, Mehsana</option>
+    <option value="District Jail, Narmada">District Jail, Narmada</option>
+    <option value="District Jail, Navsari">District Jail, Navsari</option>
+    <option value="District Jail, Patan">District Jail, Patan</option>
+    <option value="District Jail, Porbandar">District Jail, Porbandar</option>
+    <option value="District Jail, Sabarkantha">District Jail, Sabarkantha</option>
+    <option value="District Jail, Tapi">District Jail, Tapi</option>
+    <option value="District Jail, Vadodara Rural">District Jail, Vadodara Rural</option>
+    <option value="District Jail, Valsad">District Jail, Valsad</option>
+    <option value="Sub Jail, Amreli">Sub Jail, Amreli</option>
+    <option value="Sub Jail, Anand">Sub Jail, Anand</option>
+    <option value="Sub Jail, Banaskantha">Sub Jail, Banaskantha</option>
+    <option value="Sub Jail, Botad">Sub Jail, Botad</option>
+    <option value="Sub Jail, Chhota Udepur">Sub Jail, Chhota Udepur</option>
+    <option value="Sub Jail, Devbhoomi Dwarka">Sub Jail, Devbhoomi Dwarka</option>
+    <option value="Sub Jail, Gir Somnath">Sub Jail, Gir Somnath</option>
+    <option value="Sub Jail, Mahisagar">Sub Jail, Mahisagar</option>
+    <option value="Sub Jail, Morbi">Sub Jail, Morbi</option>
+    <option value="Sub Jail, Panchmahal">Sub Jail, Panchmahal</option>
+    <option value="Sub Jail, Surendranagar">Sub Jail, Surendranagar</option>
+    <option value="Women's Jail, Sabarmati">Women's Jail, Sabarmati</option>
+    <option value="Open Jail, Ahmedabad">Open Jail, Ahmedabad</option>
+    <option value="Open Jail, Junagadh">Open Jail, Junagadh</option>
+    <option value="Special Jail, Porbandar">Special Jail, Porbandar</option>
+    <option value="Special Jail, Palara (Bhuj)">Special Jail, Palara (Bhuj)</option>
+	</optgroup>
+
+<optgroup label="Haryana">Haryana</optgroup>
+    <option value="Central Jail, Ambala">Central Jail, Ambala</option>
+    <option value="Central Jail-I, Hisar">Central Jail-I, Hisar</option>
+    <option value="Central Jail-II, Hisar">Central Jail-II, Hisar</option>
+    <option value="District Jail, Bhiwani">District Jail, Bhiwani</option>
+    <option value="District Jail, Faridabad">District Jail, Faridabad</option>
+    <option value="District Jail, Gurugram">District Jail, Gurugram</option>
+    <option value="District Jail, Jind">District Jail, Jind</option>
+    <option value="District Jail, Kaithal">District Jail, Kaithal</option>
+    <option value="District Jail, Karnal">District Jail, Karnal</option>
+    <option value="District Jail, Kurukshetra">District Jail, Kurukshetra</option>
+    <option value="District Jail, Narnaul">District Jail, Narnaul</option>
+    <option value="District Jail, Rewari">District Jail, Rewari</option>
+    <option value="District Jail, Rohtak">District Jail, Rohtak</option>
+    <option value="District Jail, Sirsa">District Jail, Sirsa</option>
+    <option value="District Jail, Sonepat">District Jail, Sonepat</option>
+    <option value="District Jail, Yamunanagar">District Jail, Yamunanagar</option>
+	</optgroup>
+
+<optgroup label="Himachal Pradesh">Himachal Pradesh</optgroup>
+
+<option value="Central Jail, Shimla">Central Jail, Shimla</option>
+<option value="District Jail, Kullu">District Jail, Kullu</option>
+<option value="District Jail, Mandi">District Jail, Mandi</option>
+<option value="District Jail, Solan">District Jail, Solan</option>
+<option value="District Jail, Una">District Jail, Una</option>
+<option value="Sub Jail, Bilaspur">Sub Jail, Bilaspur</option>
+<option value="Sub Jail, Chamba">Sub Jail, Chamba</option>
+<option value="Sub Jail, Hamirpur">Sub Jail, Hamirpur</option>
+<option value="Sub Jail, Kangra">Sub Jail, Kangra</option>
+<option value="Sub Jail, Kinnaur">Sub Jail, Kinnaur</option>
+<option value="Sub Jail, Lahaul & Spiti">Sub Jail, Lahaul & Spiti</option>
+<option value="Sub Jail, Shimla">Sub Jail, Shimla</option>
+ </optgroup>
+
+<optgroup label="Jharkhand">Jharkhand</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Birsa Munda Central Jail, Hotwar, Ranchi">Central Jail, Birsa Munda Central Jail, Hotwar, Ranchi</option>
+    <option value="Central Jail, Chaibasa">Central Jail, Chaibasa</option>
+    <option value="Central Jail, Dumka">Central Jail, Dumka</option>
+    <option value="Central Jail, Hazaribagh">Central Jail, Hazaribagh</option>
+    <option value="Central Jail, Jamshedpur">Central Jail, Jamshedpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Dhanbad">District Jail, Dhanbad</option>
+    <option value="District Jail, Bokaro">District Jail, Bokaro</option>
+    <option value="District Jail, Giridih">District Jail, Giridih</option>
+    <option value="District Jail, Godda">District Jail, Godda</option>
+    <option value="District Jail, Gumla">District Jail, Gumla</option>
+    <option value="District Jail, Khunti">District Jail, Khunti</option>
+    <option value="District Jail, Lohardaga">District Jail, Lohardaga</option>
+    <option value="District Jail, Pakur">District Jail, Pakur</option>
+    <option value="District Jail, Palamu">District Jail, Palamu</option>
+    <option value="District Jail, Ramgarh">District Jail, Ramgarh</option>
+    <option value="District Jail, Saraikela-Kharsawan">District Jail, Saraikela-Kharsawan</option>
+    <option value="District Jail, Simdega">District Jail, Simdega</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Bermo">Sub Jail, Bermo</option>
+    <option value="Sub Jail, Deoghar">Sub Jail, Deoghar</option>
+    <option value="Sub Jail, Jhumri Tilaiya">Sub Jail, Jhumri Tilaiya</option>
+    <option value="Sub Jail, Mihijam">Sub Jail, Mihijam</option>
+    <option value="Sub Jail, Nawadih">Sub Jail, Nawadih</option>
+    <option value="Sub Jail, Noamundi">Sub Jail, Noamundi</option>
+    <option value="Sub Jail, Rajmahal">Sub Jail, Rajmahal</option>
+    <option value="Sub Jail, Silli">Sub Jail, Silli</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+<optgroup label="Karnataka">Karnataka</optgroup>
+<option value="Central Prison, Bangalore">Central Prison, Bangalore</option>
+<option value="Central Prison for Women, Bangalore">Central Prison for Women, Bangalore</option>
+<option value="District Jail, Belagavi (Belgaum)">District Jail, Belagavi (Belgaum)</option>
+<option value="District Jail, Ballari (Bellary)">District Jail, Ballari (Bellary)</option>
+<option value="District Jail, Bidar">District Jail, Bidar</option>
+<option value="District Jail, Chamarajanagar">District Jail, Chamarajanagar</option>
+<option value="District Jail, Chikkamagaluru (Chikmagalur)">District Jail, Chikkamagaluru (Chikmagalur)</option>
+<option value="District Jail, Chitradurga">District Jail, Chitradurga</option>
+<option value="District Jail, Davanagere">District Jail, Davanagere</option>
+<option value="District Jail, Dharwad">District Jail, Dharwad</option>
+<option value="District Jail, Gadag">District Jail, Gadag</option>
+<option value="District Jail, Hassan">District Jail, Hassan</option>
+<option value="District Jail, Haveri">District Jail, Haveri</option>
+<option value="District Jail, Kalaburagi (Gulbarga)">District Jail, Kalaburagi (Gulbarga)</option>
+<option value="District Jail, Kolar">District Jail, Kolar</option>
+<option value="District Jail, Koppal">District Jail, Koppal</option>
+<option value="District Jail, Madikeri (Coorg)">District Jail, Madikeri (Coorg)</option>
+<option value="District Jail, Mandya">District Jail, Mandya</option>
+<option value="District Jail, Mangaluru (Mangalore)">District Jail, Mangaluru (Mangalore)</option>
+<option value="District Jail, Mysuru (Mysore)">District Jail, Mysuru (Mysore)</option>
+<option value="District Jail, Raichur">District Jail, Raichur</option>
+<option value="District Jail, Ramanagara">District Jail, Ramanagara</option>
+<option value="District Jail, Shivamogga (Shimoga)">District Jail, Shivamogga (Shimoga)</option>
+<option value="District Jail, Tumakuru (Tumkur)">District Jail, Tumakuru (Tumkur)</option>
+<option value="District Jail, Udupi">District Jail, Udupi</option>
+<option value="District Jail, Vijayapura (Bijapur)">District Jail, Vijayapura (Bijapur)</option>
+<option value="District Jail, Yadgir">District Jail, Yadgir</option>
+<option value="Sub-Jail, Bagalkot">Sub-Jail, Bagalkot</option>
+<option value="Sub-Jail, Chickballapur">Sub-Jail, Chickballapur</option>
+<option value="Sub-Jail, Chikkodi">Sub-Jail, Chikkodi</option>
+<option value="Sub-Jail, Hassan">Sub-Jail, Hassan</option>
+<option value="Sub-Jail, Hunsur">Sub-Jail, Hunsur</option>
+<option value="Sub-Jail, K R Pet">Sub-Jail, K R Pet</option>
+<option value="Sub-Jail, Kolar Gold Fields (KGF)">Sub-Jail, Kolar Gold Fields (KGF)</option>
+<option value="Sub-Jail, Malavalli">Sub-Jail, Malavalli</option>
+<option value="Sub-Jail, Mandya">Sub-Jail, Mandya</option>
+<option value="Sub-Jail, Mudhol">Sub-Jail, Mudhol</option>
+<option value="Sub-Jail, Pavagada">Sub-Jail, Pavagada</option>
+<option value="Sub-Jail, Puttur">Sub-Jail, Puttur</option>
+<option value="Sub-Jail, Ramanagara">Sub-Jail, Ramanagara</option>
+<option value="Sub-Jail, Sagar">Sub-Jail, Sagar</option>
+<option value="Sub-Jail, Sakleshpur">Sub-Jail, Sakleshpur</option>
+<option value="Sub-Jail, Sandur">Sub-Jail, Sandur</option>
+<option value="Sub-Jail, Shikaripura">Sub-Jail, Shikaripura</option>
+<option value="Sub-Jail, Sindhanur">Sub-Jail, Sindhanur</option>
+<option value="Sub-Jail, Sorab">Sub-Jail, Sorab</option>
+<option value="Sub-Jail, Srirangapatna">Sub-Jail, Srirangapatna</option>
+<option value="Sub-Jail, Tirumakudalu Narasipura (T. Narasipura)">Sub-Jail, Tirumakudalu Narasipura (T. Narasipura)</option>
+<option value="Sub-Jail, Yadgir">Sub-Jail, Yadgir</option>
+ </optgroup>
+ 
+<optgroup label="Kerala">Kerala</optgroup>
+  <!-- Central Prisons -->
+  <optgroup label="Central Prisons">
+    <option value="Central Prison and Correctional Home, Poojappura, Thiruvananthapuram">Central Prison and Correctional Home, Poojappura, Thiruvananthapuram</option>
+    <option value="Central Prison and Correctional Home, Viyyur, Thrissur">Central Prison and Correctional Home, Viyyur, Thrissur</option>
+    <option value="Central Prison and Correctional Home, Kannur, Pallikkunnu">Central Prison and Correctional Home, Kannur, Pallikkunnu</option>
+    <option value="Central Prison and Correctional Home, Tavanur, Malappuram">Central Prison and Correctional Home, Tavanur, Malappuram</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Thiruvananthapuram (Poojappura)">District Jail, Thiruvananthapuram (Poojappura)</option>
+    <option value="District Jail, Kollam">District Jail, Kollam</option>
+    <option value="District Jail, Pathanamthitta">District Jail, Pathanamthitta</option>
+    <option value="District Jail, Alappuzha">District Jail, Alappuzha</option>
+    <option value="District Jail, Kottayam">District Jail, Kottayam</option>
+    <option value="District Jail, Idukki (Muttom)">District Jail, Idukki (Muttom)</option>
+    <option value="District Jail, Ernakulam">District Jail, Ernakulam</option>
+    <option value="District Jail, Thrissur (Viyyur)">District Jail, Thrissur (Viyyur)</option>
+    <option value="District Jail, Palakkad (Malampuzha)">District Jail, Palakkad (Malampuzha)</option>
+    <option value="District Jail, Kozhikode">District Jail, Kozhikode</option>
+    <option value="District Jail, Kannur">District Jail, Kannur</option>
+    <option value="District Jail, Wayanad (Mananthavady)">District Jail, Wayanad (Mananthavady)</option>
+    <option value="District Jail, Kasaragod (Hosdurg)">District Jail, Kasaragod (Hosdurg)</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Attingal">Sub Jail, Attingal</option>
+    <option value="Sub Jail, Meenachil">Sub Jail, Meenachil</option>
+    <option value="Sub Jail, Peerumade">Sub Jail, Peerumade</option>
+    <option value="Sub Jail, Mattancherry">Sub Jail, Mattancherry</option>
+    <option value="Sub Jail, Ernakulam">Sub Jail, Ernakulam</option>
+    <option value="Sub Jail, Aluva">Sub Jail, Aluva</option>
+    <option value="Sub Jail, Chavakkad">Sub Jail, Chavakkad</option>
+    <option value="Sub Jail, Viyyur">Sub Jail, Viyyur</option>
+    <option value="Sub Jail, Alathur">Sub Jail, Alathur</option>
+    <option value="Sub Jail, Ottappalam">Sub Jail, Ottappalam</option>
+    <option value="Sub Jail, Perinthalmanna">Sub Jail, Perinthalmanna</option>
+    <option value="Sub Jail, Ponnani">Sub Jail, Ponnani</option>
+    <option value="Sub Jail, Tirur">Sub Jail, Tirur</option>
+    <option value="Sub Jail, Koyilandy">Sub Jail, Koyilandy</option>
+    <option value="Sub Jail, Vatakara">Sub Jail, Vatakara</option>
+    <option value="Sub Jail, Kannur">Sub Jail, Kannur</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+ 
+
+<optgroup label="Madhya Pradesh">Madhya Pradesh</optgroup>
+<option value="Central Jail, Bhopal">Central Jail, Bhopal</option>
+<option value="Central Jail, Indore">Central Jail, Indore</option>
+<option value="Central Jail, Jabalpur">Central Jail, Jabalpur</option>
+<option value="Central Jail, Gwalior">Central Jail, Gwalior</option>
+<option value="Central Jail, Ujjain">Central Jail, Ujjain</option>
+<option value="Central Jail, Sagar">Central Jail, Sagar</option>
+<option value="Central Jail, Rewa">Central Jail, Rewa</option>
+<option value="Central Jail, Satna">Central Jail, Satna</option>
+<option value="Central Jail, Ratlam">Central Jail, Ratlam</option>
+<option value="Central Jail, Khandwa">Central Jail, Khandwa</option>
+<option value="Central Jail, Khargone">Central Jail, Khargone</option>
+<option value="Central Jail, Hoshangabad">Central Jail, Hoshangabad</option>
+<option value="Central Jail, Narsinghpur">Central Jail, Narsinghpur</option>
+<option value="Central Jail, Chhindwara">Central Jail, Chhindwara</option>
+<option value="Central Jail, Shahdol">Central Jail, Shahdol</option>
+<option value="Central Jail, Singrauli">Central Jail, Singrauli</option>
+<option value="Central Jail, Morena">Central Jail, Morena</option>
+<option value="Central Jail, Dhar">Central Jail, Dhar</option>
+<option value="Central Jail, Dewas">Central Jail, Dewas</option>
+<option value="Central Jail, Neemuch">Central Jail, Neemuch</option>
+<option value="Central Jail, Sehore">Central Jail, Sehore</option>
+<option value="Central Jail, Mandsaur">Central Jail, Mandsaur</option>
+<option value="Central Jail, Harda">Central Jail, Harda</option>
+<option value="Central Jail, Betul">Central Jail, Betul</option>
+<option value="Central Jail, Seoni">Central Jail, Seoni</option>
+<option value="Central Jail, Balaghat">Central Jail, Balaghat</option>
+<option value="Central Jail, Khandwa">Central Jail, Khandwa</option>
+<option value="Central Jail, Khargone">Central Jail, Khargone</option>
+<option value="District Jail, Anuppur">District Jail, Anuppur</option>
+<option value="District Jail, Ashok Nagar">District Jail, Ashok Nagar</option>
+<option value="District Jail, Barwani">District Jail, Barwani</option>
+<option value="District Jail, Burhanpur">District Jail, Burhanpur</option>
+<option value="District Jail, Chhatarpur">District Jail, Chhatarpur</option>
+<option value="District Jail, Damoh">District Jail, Damoh</option>
+<option value="District Jail, Datia">District Jail, Datia</option>
+<option value="District Jail, Dewas">District Jail, Dewas</option>
+<option value="District Jail, Dhar">District Jail, Dhar</option>
+<option value="District Jail, Dindori">District Jail, Dindori</option>
+<option value="District Jail, Guna">District Jail, Guna</option>
+<option value="District Jail, Harda">District Jail, Harda</option>
+<option value="District Jail, Hoshangabad">District Jail, Hoshangabad</option>
+<option value="District Jail, Khandwa">District Jail, Khandwa</option>
+<option value="District Jail, Khargone">District Jail, Khargone</option>
+<option value="District Jail, Mandla">District Jail, Mandla</option>
+<option value="District Jail, Mandsaur">District Jail, Mandsaur</option>
+<option value="District Jail, Neemuch">District Jail, Neemuch</option>
+<option value="District Jail, Panna">District Jail, Panna</option>
+<option value="District Jail, Raisen">District Jail, Raisen</option>
+<option value="District Jail, Rajgarh">District Jail, Rajgarh</option>
+<option value="District Jail, Ratlam">District Jail, Ratlam</option>
+<option value="District Jail, Rewa">District Jail, Rewa</option>
+<option value="District Jail, Sagar">District Jail, Sagar</option>
+<option value="District Jail, Satna">District Jail, Satna</option>
+<option value="District Jail, Sehore">District Jail, Sehore</option>
+<option value="District Jail, Seoni">District Jail, Seoni</option>
+<option value="District Jail, Shahdol">District Jail, Shahdol</option>
+<option value="District Jail, Shajapur">District Jail, Shajapur</option>
+<option value="District Jail, Sheopur">District Jail, Sheopur</option>
+<option value="District Jail, Shivpuri">District Jail, Shivpuri</option>
+<option value="District Jail, Sidhi">District Jail, Sidhi</option>
+<option value="District Jail, Singrauli">District Jail, Singrauli</option>
+<option value="District Jail, Tikamgarh">District Jail, Tikamgarh</option>
+<option value="District Jail, Ujjain">District Jail, Ujjain</option>
+<option value="District Jail, Vidisha">District Jail, Vidisha</option>
+<option value="Special Sub-Jail, Amla">Special Sub-Jail, Amla</option>
+<option value="Special Sub-Jail, Badwani">Special Sub-Jail, Badwani</option>
+<option value="Special Sub-Jail, Burhar">Special Sub-Jail, Burhar</option>
+<option value="Special Sub-Jail, Dabra">Special Sub-Jail, Dabra</option>
+<option value="Special Sub-Jail, Deosar">Special Sub-Jail, Deosar</option>
+<option value="Special Sub-Jail, Gwalior">Special Sub-Jail, Gwalior</option>
+<option value="Special Sub-Jail, Ichhawar">Special Sub-Jail, Ichhawar</option>
+<option value="Special Sub-Jail, Itarsi">Special Sub-Jail, Itarsi</option>
+<option value="Special Sub-Jail, Khachrod">Special Sub-Jail, Khachrod</option>
+<option value="Special Sub-Jail, Lahar">Special Sub-Jail, Lahar</option>
+<option value="Special Sub-Jail, Lateri">Special Sub-Jail, Lateri</option>
+<option value="Special Sub-Jail, Mandav">Special Sub-Jail, Mandav</option>
+<option value="Special Sub-Jail, Manpur">Special Sub-Jail, Manpur</option>
+<option value="Special Sub-Jail, Mhow">Special Sub-Jail, Mhow</option>
+<option value="Special Sub-Jail, Multai">Special Sub-Jail, Multai</option>
+<option value="Special Sub-Jail, Niwas">Special Sub-Jail, Niwas</option>
+<option value="Special Sub-Jail, Pawai">Special Sub-Jail, Pawai</option>
+<option value="Special Sub-Jail, Pichhore">Special Sub-Jail, Pichhore</option>
+<option value="Special Sub-Jail, Raghogarh">Special Sub-Jail, Raghogarh</option>
+<option value="Special Sub-Jail, Ranapur">Special Sub-Jail, Ranapur</option>
+<option value="Special Sub-Jail, Rehti">Special Sub-Jail, Rehti</option>
+<option value="Special Sub-Jail, Rithi">Special Sub-Jail, Rithi</option>
+<option value="Special Sub-Jail, Shahpur">Special Sub-Jail, Shahpur</option>
+<option value="Special Sub-Jail, Sheopur">Special Sub-Jail, Sheopur</option>
+<option value="Special Sub-Jail, Sironj">Special Sub-Jail, Sironj</option>
+<option value="Special Sub-Jail, Umariya">Special Sub-Jail, Umariya</option>
+<option value="Special Sub-Jail, Vidisha">Special Sub-Jail, Vidisha</option>
+ </optgroup>
+ 
+
+<optgroup label="Maharashtra">Maharashtra</optgroup>
+<!-- Central Jails -->
+<option value="Arthur Road Jail, Mumbai">Arthur Road Jail, Mumbai</option>
+<option value="Yerawada Central Jail, Pune">Yerawada Central Jail, Pune</option>
+<option value="Nagpur Central Jail, Nagpur">Nagpur Central Jail, Nagpur</option>
+<option value="Taloja Central Jail, Navi Mumbai">Taloja Central Jail, Navi Mumbai</option>
+<option value="Thane Central Jail, Thane">Thane Central Jail, Thane</option>
+<option value="Harsul Central Jail, Aurangabad">Harsul Central Jail, Aurangabad</option>
+<option value="Kolhapur Central Prison, Kalamba">Kolhapur Central Prison, Kalamba</option>
+<option value="Nashik Road Central Prison, Nashik">Nashik Road Central Prison, Nashik</option>
+
+<!-- District Jails -->
+<option value="Ahmednagar District Jail, Ahmednagar">Ahmednagar District Jail, Ahmednagar</option>
+<option value="Akola District Jail, Akola">Akola District Jail, Akola</option>
+<option value="Amravati District Jail, Amravati">Amravati District Jail, Amravati</option>
+<option value="Beed District Jail, Beed">Beed District Jail, Beed</option>
+<option value="Bhandara District Jail, Bhandara">Bhandara District Jail, Bhandara</option>
+<option value="Buldhana District Jail, Buldhana">Buldhana District Jail, Buldhana</option>
+<option value="Chandrapur District Jail, Chandrapur">Chandrapur District Jail, Chandrapur</option>
+<option value="Dhule District Jail, Dhule">Dhule District Jail, Dhule</option>
+<option value="Gadchiroli District Jail, Gadchiroli">Gadchiroli District Jail, Gadchiroli</option>
+<option value="Gondia District Jail, Gondia">Gondia District Jail, Gondia</option>
+<option value="Hingoli District Jail, Hingoli">Hingoli District Jail, Hingoli</option>
+<option value="Jalgaon District Jail, Jalgaon">Jalgaon District Jail, Jalgaon</option>
+<option value="Jalna District Jail, Jalna">Jalna District Jail, Jalna</option>
+<option value="Latur District Jail, Latur">Latur District Jail, Latur</option>
+<option value="Nanded District Jail, Nanded">Nanded District Jail, Nanded</option>
+<option value="Osmanabad District Jail, Osmanabad">Osmanabad District Jail, Osmanabad</option>
+<option value="Palghar District Jail, Palghar">Palghar District Jail, Palghar</option>
+<option value="Parbhani District Jail, Parbhani">Parbhani District Jail, Parbhani</option>
+<option value="Raigad District Jail, Alibaug">Raigad District Jail, Alibaug</option>
+<option value="Ratnagiri District Jail, Ratnagiri">Ratnagiri District Jail, Ratnagiri</option>
+<option value="Sangli District Jail, Sangli">Sangli District Jail, Sangli</option>
+<option value="Satara District Jail, Satara">Satara District Jail, Satara</option>
+<option value="Sindhudurg District Jail, Sindhudurg">Sindhudurg District Jail, Sindhudurg</option>
+<option value="Solapur District Jail, Solapur">Solapur District Jail, Solapur</option>
+<option value="Wardha District Jail, Wardha">Wardha District Jail, Wardha</option>
+<option value="Washim District Jail, Washim">Washim District Jail, Washim</option>
+
+<!-- Other Jails -->
+<option value="Open Colony Aatpadi, Sangli">Open Colony Aatpadi, Sangli</option>
+<option value="Special Jail Ratnagiri, Ratnagiri">Special Jail Ratnagiri, Ratnagiri</option>
+ </optgroup>
+
+<optgroup label="Manipur">Manipur</optgroup>
+    <option value="Manipur Central Jail, Sajiwa">Manipur Central Jail, Sajiwa</option>
+    <option value="Manipur Central Jail, Imphal">Manipur Central Jail, Imphal</option>
+    <option value="District Jail, Chandel">District Jail, Chandel</option>
+    <option value="District Jail, Churachandpur">District Jail, Churachandpur</option>
+    <option value="Sub Jail, Jiribam">Sub Jail, Jiribam</option>
+	<optgroup>
+
+<optgroup label="Meghalaya">Meghalaya</optgroup>
+    <option value="Central Jail, Shillong">Central Jail, Shillong</option>
+    <option value="District Jail, Jowai">District Jail, Jowai</option>
+    <option value="District Jail, Tura">District Jail, Tura</option>
+    <option value="District Jail, Nongpoh">District Jail, Nongpoh</option>
+    <option value="District Jail, Williamnagar">District Jail, Williamnagar</option>
+ </optgroup>
+ 
+<optgroup label="Mizoram">Mizoram</optgroup>
+    <option value="Central Jail, Aizawl">Central Jail, Aizawl</option>
+    <option value="District Jail, Aizawl">District Jail, Aizawl</option>
+    <option value="District Jail, Sazaikawn (Lunglei)">District Jail, Sazaikawn (Lunglei)</option>
+ </optgroup>
+ 
+<optgroup label="Nagaland">Nagaland</optgroup>
+    <option value="Central Jail, Dimapur">Central Jail, Dimapur</option>
+    <option value="District Jail, Dimapur">District Jail, Dimapur</option>
+    <option value="District Jail, Kohima">District Jail, Kohima</option>
+    <option value="District Jail, Mokokchung">District Jail, Mokokchung</option>
+    <option value="District Jail, Mon">District Jail, Mon</option>
+    <option value="District Jail, Phek">District Jail, Phek</option>
+    <option value="District Jail, Wokha">District Jail, Wokha</option>
+    <option value="District Jail, Zunheboto">District Jail, Zunheboto</option>
+	</optgroup>
+ 
+<optgroup label="Odisha">Odisha</optgroup>
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Bhubaneswar">Special Jail, Bhubaneswar</option>
+    <option value="Special Jail, Rourkela">Special Jail, Rourkela</option>
+  </optgroup>
+
+  <!-- Circle Jails -->
+  <optgroup label="Circle Jails">
+    <option value="Circle Jail, Baripada">Circle Jail, Baripada</option>
+    <option value="Circle Jail, Berhampur">Circle Jail, Berhampur</option>
+    <option value="Circle Jail, Choudwar">Circle Jail, Choudwar</option>
+    <option value="Circle Jail, Koraput">Circle Jail, Koraput</option>
+    <option value="Circle Jail, Sambalpur">Circle Jail, Sambalpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Angul">District Jail, Angul</option>
+    <option value="District Jail, Balangir">District Jail, Balangir</option>
+    <option value="District Jail, Balasore">District Jail, Balasore</option>
+    <option value="District Jail, Bargarh">District Jail, Bargarh</option>
+    <option value="District Jail, Bhadrak">District Jail, Bhadrak</option>
+    <option value="District Jail, Boudh">District Jail, Boudh</option>
+    <option value="District Jail, Cuttack">District Jail, Cuttack</option>
+    <option value="District Jail, Dhenkanal">District Jail, Dhenkanal</option>
+    <option value="District Jail, Ganjam">District Jail, Ganjam</option>
+    <option value="District Jail, Gajapati">District Jail, Gajapati</option>
+    <option value="District Jail, Jharsuguda">District Jail, Jharsuguda</option>
+    <option value="District Jail, Jajpur">District Jail, Jajpur</option>
+    <option value="District Jail, Jagatsinghpur">District Jail, Jagatsinghpur</option>
+    <option value="District Jail, Keonjhar">District Jail, Keonjhar</option>
+    <option value="District Jail, Khordha">District Jail, Khordha</option>
+    <option value="District Jail, Kendrapara">District Jail, Kendrapara</option>
+    <option value="District Jail, Malkangiri">District Jail, Malkangiri</option>
+    <option value="District Jail, Mayurbhanj">District Jail, Mayurbhanj</option>
+    <option value="District Jail, Nabarangpur">District Jail, Nabarangpur</option>
+    <option value="District Jail, Nayagarh">District Jail, Nayagarh</option>
+    <option value="District Jail, Nuapada">District Jail, Nuapada</option>
+    <option value="District Jail, Puri">District Jail, Puri</option>
+    <option value="District Jail, Rayagada">District Jail, Rayagada</option>
+    <option value="District Jail, Sambalpur">District Jail, Sambalpur</option>
+    <option value="District Jail, Sonepur">District Jail, Sonepur</option>
+    <option value="District Jail, Sundargarh">District Jail, Sundargarh</option>
+  </optgroup>
+
+  <!-- Other Jails -->
+  <optgroup label="Other Jails">
+    <option value="Open Air Jail, Jamujhari">Open Air Jail, Jamujhari</option>
+    <option value="Nari Bandi Niketan (Women's Jail), Sambalpur">Nari Bandi Niketan (Women's Jail), Sambalpur</option>
+
+  </optgroup>
+ 
+<optgroup label="Punjab">Punjab</optgroup>
+ <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Patiala">Central Jail, Patiala</option>
+    <option value="Central Jail, Bathinda">Central Jail, Bathinda</option>
+    <option value="Central Jail, Ferozpur">Central Jail, Ferozpur</option>
+    <option value="Central Jail, Amritsar">Central Jail, Amritsar</option>
+    <option value="Central Jail, Gurdaspur">Central Jail, Gurdaspur</option>
+    <option value="Central Jail, Ludhiana">Central Jail, Ludhiana</option>
+    <option value="Central Jail, Jalandhar">Central Jail, Jalandhar</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Nabha">District Jail, Nabha</option>
+    <option value="District Jail, Sangrur">District Jail, Sangrur</option>
+    <option value="District Jail, Faridkot">District Jail, Faridkot</option>
+    <option value="District Jail, Kapurthala">District Jail, Kapurthala</option>
+    <option value="District Jail, Hoshiarpur">District Jail, Hoshiarpur</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Fazilka">Sub Jail, Fazilka</option>
+    <option value="Sub Jail, Moga">Sub Jail, Moga</option>
+    <option value="Sub Jail, Muktsar">Sub Jail, Muktsar</option>
+    <option value="Sub Jail, Patti">Sub Jail, Patti</option>
+    <option value="Sub Jail, Malerkotla">Sub Jail, Malerkotla</option>
+    <option value="Sub Jail, Pathankot">Sub Jail, Pathankot</option>
+   
+  </optgroup>
+ 
+<optgroup label="Rajasthan">Rajasthan</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Ajmer">Central Jail, Ajmer</option>
+    <option value="Central Jail, Bikaner">Central Jail, Bikaner</option>
+    <option value="Central Jail, Jaipur">Central Jail, Jaipur</option>
+    <option value="Central Jail, Jodhpur">Central Jail, Jodhpur</option>
+    <option value="Central Jail, Kota">Central Jail, Kota</option>
+    <option value="Central Jail, Udaipur">Central Jail, Udaipur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Alwar">District Jail, Alwar</option>
+    <option value="District Jail, Baran">District Jail, Baran</option>
+    <option value="District Jail, Barmer">District Jail, Barmer</option>
+    <option value="District Jail, Bharatpur">District Jail, Bharatpur</option>
+    <option value="District Jail, Bhilwara">District Jail, Bhilwara</option>
+    <option value="District Jail, Chittorgarh">District Jail, Chittorgarh</option>
+    <option value="District Jail, Dausa">District Jail, Dausa</option>
+    <option value="District Jail, Dungarpur">District Jail, Dungarpur</option>
+    <option value="District Jail, Hanumangarh">District Jail, Hanumangarh</option>
+    <option value="District Jail, Jhunjhunu">District Jail, Jhunjhunu</option>
+    <option value="District Jail, Karauli">District Jail, Karauli</option>
+    <option value="District Jail, Sirohi">District Jail, Sirohi</option>
+    <option value="District Jail, Tonk">District Jail, Tonk</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Beawar">Sub Jail, Beawar</option>
+    <option value="Sub Jail, Ganganagar">Sub Jail, Ganganagar</option>
+    <option value="Sub Jail, Hindaun">Sub Jail, Hindaun</option>
+    <option value="Sub Jail, Jhalawar">Sub Jail, Jhalawar</option>
+    <option value="Sub Jail, Kishanganj">Sub Jail, Kishanganj</option>
+    <option value="Sub Jail, Nagaur">Sub Jail, Nagaur</option>
+    <option value="Sub Jail, Pali">Sub Jail, Pali</option>
+    <option value="Sub Jail, Sawai Madhopur">Sub Jail, Sawai Madhopur</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Jodhpur">Special Jail, Jodhpur</option>
+    <option value="Special Jail, Ajmer">Special Jail, Ajmer</option>
+    <option value="Special Jail, Kota">Special Jail, Kota</option>
+  </optgroup>
+
+<optgroup label="Sikkim">Sikkim</optgroup>
+  <!-- State Jails -->
+  <optgroup label="State Jails">
+    <option value="Sikkim State Jail, Gangtok">Sikkim State Jail, Gangtok</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="Rongneck Jail, Gangtok">Rongneck Jail, Gangtok</option>
+  </optgroup>
+
+ 
+<optgroup label="Telangana">Telangana</optgroup>
+  <!-- Central Prisons -->
+  <optgroup label="Central Prisons">
+    <option value="Central Prison, Cherlapalli">Central Prison, Cherlapalli</option>
+    <option value="Central Prison, Warangal">Central Prison, Warangal</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Adilabad">District Jail, Adilabad</option>
+    <option value="District Jail, Karimnagar">District Jail, Karimnagar</option>
+    <option value="District Jail, Khammam">District Jail, Khammam</option>
+    <option value="District Jail, Mahabubnagar">District Jail, Mahabubnagar</option>
+    <option value="District Jail, Medak">District Jail, Medak</option>
+    <option value="District Jail, Nalgonda">District Jail, Nalgonda</option>
+    <option value="District Jail, Nizamabad">District Jail, Nizamabad</option>
+    <option value="District Jail, Ranga Reddy">District Jail, Ranga Reddy</option>
+    <option value="District Jail, Warangal">District Jail, Warangal</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Asifabad">Sub Jail, Asifabad</option>
+    <option value="Sub Jail, Luxettipet">Sub Jail, Luxettipet</option>
+    <option value="Sub Jail, Nirmal">Sub Jail, Nirmal</option>
+    <option value="Sub Jail, Huzurabad">Sub Jail, Huzurabad</option>
+    <option value="Sub Jail, Jagtial">Sub Jail, Jagtial</option>
+    <option value="Sub Jail, Sathupally">Sub Jail, Sathupally</option>
+    <option value="Sub Jail, Madhira">Sub Jail, Madhira</option>
+    <option value="Sub Jail, Yellandu">Sub Jail, Yellandu</option>
+    <option value="Sub Jail, Bhadrachalam">Sub Jail, Bhadrachalam</option>
+    <option value="Sub Jail, Nagarkurnool">Sub Jail, Nagarkurnool</option>
+    <option value="Sub Jail, Kalwakurthy">Sub Jail, Kalwakurthy</option>
+    <option value="Sub Jail, Kandi (V), Sangareddy (M), Medak">Sub Jail, Kandi (V), Sangareddy (M), Medak</option>
+    <option value="Sub Jail, Medak">Sub Jail, Medak</option>
+    <option value="Sub Jail, Jogipet">Sub Jail, Jogipet</option>
+    <option value="Sub Jail, Siddipet">Sub Jail, Siddipet</option>
+    <option value="Sub Jail, Suyapet">Sub Jail, Suyapet</option>
+    <option value="Sub Jail, Miryalaguda">Sub Jail, Miryalaguda</option>
+    <option value="Sub Jail, Bhongir">Sub Jail, Bhongir</option>
+    <option value="Sub Jail, Deverakonda">Sub Jail, Deverakonda</option>
+    <option value="Sub Jail, Huzurnagar">Sub Jail, Huzurnagar</option>
+    <option value="Sub Jail, Bodhan">Sub Jail, Bodhan</option>
+    <option value="Sub Jail, Kamareddy">Sub Jail, Kamareddy</option>
+    <option value="Sub Jail, Armoor">Sub Jail, Armoor</option>
+    <option value="Sub Jail, Pargi">Sub Jail, Pargi</option>
+
+  </optgroup>
+  
+<optgroup label="Tripura">Tripura</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Bishalgarh">Central Jail, Bishalgarh</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Kailashahar">District Jail, Kailashahar</option>
+    <option value="District Jail, Udaipur">District Jail, Udaipur</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Dharmanagar">Sub Jail, Dharmanagar</option>
+    <option value="Sub Jail, Kamalpur">Sub Jail, Kamalpur</option>
+    <option value="Sub Jail, Kanchanpur">Sub Jail, Kanchanpur</option>
+    <option value="Sub Jail, Khowai">Sub Jail, Khowai</option>
+    <option value="Sub Jail, Sonamura">Sub Jail, Sonamura</option>
+    <option value="Sub Jail, Amarpur">Sub Jail, Amarpur</option>
+    <option value="Sub Jail, Belonia">Sub Jail, Belonia</option>
+ 
+  </optgroup>
+ 
+<optgroup label="Uttar Pradesh">Uttar Pradesh</optgroup>
+ <optgroup label="Central Prisons">
+    <option value="Central Prison, Agra">Central Prison, Agra</option>
+    <option value="Central Prison, Ayodhya">Central Prison, Ayodhya</option>
+    <option value="Central Prison, Etawah">Central Prison, Etawah</option>
+    <option value="Central Prison, Gorakhpur">Central Prison, Gorakhpur</option>
+    <option value="Central Prison, Naini, Allahabad">Central Prison, Naini, Allahabad</option>
+    <option value="Central Prison, Varanasi">Central Prison, Varanasi</option>
+  </optgroup>
+  
+   <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Aligarh">District Jail, Aligarh</option>
+    <option value="District Jail, Allahabad">District Jail, Allahabad</option>
+    <option value="District Jail, Amethi">District Jail, Amethi</option>
+    <option value="District Jail, Amroha">District Jail, Amroha</option>
+    <option value="District Jail, Ayodhya">District Jail, Ayodhya</option>
+    <option value="District Jail, Azamgarh">District Jail, Azamgarh</option>
+    <option value="District Jail, Badaun">District Jail, Badaun</option>
+    <option value="District Jail, Baghpat">District Jail, Baghpat</option>
+    <option value="District Jail, Bahraich">District Jail, Bahraich</option>
+    <option value="District Jail, Ballia">District Jail, Ballia</option>
+    <option value="District Jail, Balrampur">District Jail, Balrampur</option>
+    <option value="District Jail, Banda">District Jail, Banda</option>
+    <option value="District Jail, Barabanki">District Jail, Barabanki</option>
+    <option value="District Jail, Bareilly">District Jail, Bareilly</option>
+    <option value="District Jail, Basti">District Jail, Basti</option>
+    <option value="District Jail, Bhadohi">District Jail, Bhadohi</option>
+    <option value="District Jail, Bijnor">District Jail, Bijnor</option>
+    <option value="District Jail, Budaun">District Jail, Budaun</option>
+    <option value="District Jail, Bulandshahr">District Jail, Bulandshahr</option>
+    <option value="District Jail, Chandauli">District Jail, Chandauli</option>
+    <option value="District Jail, Chitrakoot">District Jail, Chitrakoot</option>
+    <option value="District Jail, Deoria">District Jail, Deoria</option>
+    <option value="District Jail, Etah">District Jail, Etah</option>
+    <option value="District Jail, Faizabad">District Jail, Faizabad</option>
+    <option value="District Jail, Farrukhabad">District Jail, Farrukhabad</option>
+    <option value="District Jail, Fatehpur">District Jail, Fatehpur</option>
+    <option value="District Jail, Firozabad">District Jail, Firozabad</option>
+    <option value="District Jail, Gautam Budh Nagar">District Jail, Gautam Budh Nagar</option>
+    <option value="District Jail, Ghaziabad">District Jail, Ghaziabad</option>
+    <option value="District Jail, Gonda">District Jail, Gonda</option>
+    <option value="District Jail, Gorakhpur">District Jail, Gorakhpur</option>
+    <option value="District Jail, Hamirpur">District Jail, Hamirpur</option>
+    <option value="District Jail, Hardoi">District Jail, Hardoi</option>
+    <option value="District Jail, Hathras">District Jail, Hathras</option>
+    <option value="District Jail, Jalaun">District Jail, Jalaun</option>
+    <option value="District Jail, Jaunpur">District Jail, Jaunpur</option>
+    <option value="District Jail, Jhansi">District Jail, Jhansi</option>
+    <option value="District Jail, Kanpur Dehat">District Jail, Kanpur Dehat</option>
+	 <option value="District Jail, Kaushambi">District Jail, Kaushambi</option>
+        <option value="District Jail, Kheri">District Jail, Kheri</option>
+        <option value="District Jail, Kushinagar">District Jail, Kushinagar</option>
+        <option value="District Jail, Lalitpur">District Jail, Lalitpur</option>
+        <option value="District Jail, Lucknow">District Jail, Lucknow</option>
+        <option value="District Jail, Mahoba">District Jail, Mahoba</option>
+        <option value="District Jail, Mainpuri">District Jail, Mainpuri</option>
+        <option value="District Jail, Mathura">District Jail, Mathura</option>
+        <option value="District Jail, Mau">District Jail, Mau</option>
+        <option value="District Jail, Meerut">District Jail, Meerut</option>
+        <option value="District Jail, Mirzapur">District Jail, Mirzapur</option>
+        <option value="District Jail, Moradabad">District Jail, Moradabad</option>
+        <option value="District Jail, Muzaffarnagar">District Jail, Muzaffarnagar</option>
+        <option value="District Jail, Nainital">District Jail, Nainital</option>
+        <option value="District Jail, Pilibhit">District Jail, Pilibhit</option>
+        <option value="District Jail, Pratapgarh">District Jail, Pratapgarh</option>
+        <option value="District Jail, Raebareli">District Jail, Raebareli</option>
+        <option value="District Jail, Rampur">District Jail, Rampur</option>
+        <option value="District Jail, Saharanpur">District Jail, Saharanpur</option>
+        <option value="District Jail, Sambhal">District Jail, Sambhal</option>
+        <option value="District Jail, Sant Kabir Nagar">District Jail, Sant Kabir Nagar</option>
+        <option value="District Jail, Sant Ravidas Nagar">District Jail, Sant Ravidas Nagar</option>
+        <option value="District Jail, Shahjahanpur">District Jail, Shahjahanpur</option>
+        <option value="District Jail, Shamli">District Jail, Shamli</option>
+        <option value="District Jail, Shravasti">District Jail, Shravasti</option>
+        <option value="District Jail, Sidharthnagar">District Jail, Sidharthnagar</option>
+        <option value="District Jail, Sitapur">District Jail, Sitapur</option>
+        <option value="District Jail, Sonbhadra">District Jail, Sonbhadra</option>
+        <option value="District Jail, Sultanpur">District Jail, Sultanpur</option>
+        <option value="District Jail, Unnao">District Jail, Unnao</option>
+        <option value="District Jail, Varanasi">District Jail, Varanasi</option>
+        <option value="Model Jail, Lucknow">Model Jail, Lucknow</option>
+        <option value="Nari Bandi Niketan, Lucknow">Nari Bandi Niketan, Lucknow</option>
+        <option value="Kishore Sadan, Bareilly">Kishore Sadan, Bareilly</option>
+		        <option value="Sub Jail, Deoband">Sub Jail, Deoband</option>
+        <option value="Sub Jail, Gyanpur">Sub Jail, Gyanpur</option>
+    </optgroup>
+ 
+<optgroup label="Uttarakhand">Uttarakhand</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Sitarganj">Central Jail, Sitarganj</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Dehradun">District Jail, Dehradun</option>
+    <option value="District Jail, Haridwar">District Jail, Haridwar</option>
+    <option value="District Jail, Tehri">District Jail, Tehri</option>
+    <option value="District Jail, Chamoli">District Jail, Chamoli</option>
+    <option value="District Jail, Pauri">District Jail, Pauri</option>
+    <option value="District Jail, Nainital">District Jail, Nainital</option>
+  </optgroup>
+ </optgroup>
+ 
+<optgroup label="West Bengal">West Bengal</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Dum Dum">Central Jail, Dum Dum</option>
+    <option value="Central Jail, Presidency, Alipore">Central Jail, Presidency, Alipore</option>
+    <option value="Central Jail, Burdwan">Central Jail, Burdwan</option>
+    <option value="Central Jail, Jalpaiguri">Central Jail, Jalpaiguri</option>
+    <option value="Central Jail, Berhampore">Central Jail, Berhampore</option>
+    <option value="Central Jail, Midnapore">Central Jail, Midnapore</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Arambag Sub-Correctional Home">Arambag Sub-Correctional Home</option>
+    <option value="Barrackpore Special Correctional Home">Barrackpore Special Correctional Home</option>
+    <option value="Basirhat Sub-Correctional Home">Basirhat Sub-Correctional Home</option>
+    <option value="Bishnupur Sub-Correctional Home">Bishnupur Sub-Correctional Home</option>
+    <option value="Bolpur Sub-Correctional Home">Bolpur Sub-Correctional Home</option>
+    <option value="Contai Sub-Correctional Home">Contai Sub-Correctional Home</option>
+    <option value="Dinhata Sub-Correctional Home">Dinhata Sub-Correctional Home</option>
+    <option value="Durgapur Sub-Correctional Home">Durgapur Sub-Correctional Home</option>
+    <option value="Ghatal Sub-Correctional Home">Ghatal Sub-Correctional Home</option>
+    <option value="Howrah District Correctional Home">Howrah District Correctional Home</option>
+    <option value="Alipore Women's Correctional Home">Alipore Women's Correctional Home</option>
+    <option value="Krishnanagar District Correctional Home">Krishnanagar District Correctional Home</option>
+    <option value="Burdwan District Correctional Home">Burdwan District Correctional Home</option>
+    <option value="Suri District Correctional Home">Suri District Correctional Home</option>
+    <option value="Midnapore District Correctional Home">Midnapore District Correctional Home</option>
+    <option value="Midnapore Open Correctional Home">Midnapore Open Correctional Home</option>
+    <option value="Bankura District Correctional Home">Bankura District Correctional Home</option>
+    <option value="Berhampore District Correctional Home">Berhampore District Correctional Home</option>
+    <option value="Balurghat District Correctional Home">Balurghat District Correctional Home</option>
+    <option value="Jalpaiguri District Correctional Home">Jalpaiguri District Correctional Home</option>
+   
+  </optgroup>
+    
+
+				<br> <label for="Email id">Email id:</label></br>
+                <input type="email" name="email" placeholder="abc@example.com" required>
+				<br> <label for="Contact No">Contact No</label></br>
+                <input type="tel" name="Enter your Mobile Number" placeholder="Enter your Mobile Number" required>
+                <a href="login2.html"><button type="button" class="Signup"id="Signup">Signup</button></a>
+<a href="creatone.html" target="_blank">Don't have an Account? Create One</button></a>
+
+            </form>
+        </div>
+
+        <div class="form">
+            <h2>Supporter Details</h2>
+            <form action="visitor_details.html" method="POST">
+			 <label for="name">Name:</label>
+			  
+                <input type="text" name="Enter Your Name" placeholder="Enter Your Name" required>
+				 <label for="Address">Address:</label>
+                <input type="text" name="Enter Full Address" placeholder="Enter Full Address" required>
+          <label for="gender">Gender:</label>
+<select name="gender" id="gender" required>
+    <option value="-Select-">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+
+               <br> <label for="Age">Age:</label></br>
+                <input type="text" name="age" placeholder="Age" required>
+				
+ <br> <label for="relation">Relation:</label></br>
+<select name="relation" id="relation" required>
+                <option value="Select_Relation">Select Relation</option>
+			   <option value="aunt">Aunt</option>
+                <option value="brother">Brother</option>
+                <option value="brother_in_law">Brother-In-Law</option>
+                <option value="cousin">Cousin</option>
+                <option value="daughter">Daughter</option>
+                <option value="daughter_in_law">Daughter-In-Law</option>
+                <option value="father">Father</option>
+                <option value="father_in_law">Father-In-Law</option>
+                <option value="friend">Friend</option>
+                <option value="grand_daughter">Grand daughter</option>
+                <option value="grand_father">Grand Father</option>
+                <option value="grand_mother">Grand Mother</option>
+                <option value="grand_son">Grand Son</option>
+                <option value="husband / wife">Husband / Wife</option>
+                <option value="mother">Mother</option>
+                <option value="mother_in_law">Mother-In-Law</option>
+                <option value="neighbour">Neighbour</option>
+                <option value="nephew">Nephew</option>
+                <option value="others">Others</option>
+                <option value="sister_in_law">Sister</option>
+                <option value="Sister-In-Law">Sister-In-Law</option>
+                <option value="son">Son</option>
+                <option value="son_in_law">Son-In-Law</option>
+                <option value="uncle">Unlce</option>
+            </select>
+			
+			              <br> <label for="Select State:">Select State:</label></br>
+			            <select name="select-state" required class="form-input">
+                <option value="select-state">Select State</option>	
+		     <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option>
+			
+			        </select>
+		 Jail Selection
+
+           <select name="Jail Selection" required class="form-input">
+		    <option value="select-state">Select State</option>	
+            <optgroup label="Andhra Pradesh">
+
+                <!-- Central Jails -->
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Central Jail, Visakhapatnam">Central Jail, Visakhapatnam</option>
+<option value="Central Jail, Rajahmundry">Central Jail, Rajahmundry</option>
+<option value="Central Jail, Guntur">Central Jail, Guntur</option>
+<option value="Central Jail, Tirupati">Central Jail, Tirupati</option>
+<option value="Central Jail, Nellore">Central Jail, Nellore</option>
+<option value="Central Jail, Kadapa">Central Jail, Kadapa</option>
+<option value="Central Jail, Anantapur">Central Jail, Anantapur</option>
+
+<!-- District Jails -->
+<option value="Srikakulam District Jail, Srikakulam">Srikakulam District Jail, Srikakulam</option>
+<option value="Vizianagaram District Jail, Vizianagaram">Vizianagaram District Jail, Vizianagaram</option>
+<option value="East Godavari District Jail, Kakinada">East Godavari District Jail, Kakinada</option>
+<option value="West Godavari District Jail, Eluru">West Godavari District Jail, Eluru</option>
+<option value="Krishna District Jail, Machilipatnam">Krishna District Jail, Machilipatnam</option>
+<option value="Guntur District Jail, Guntur">Guntur District Jail, Guntur</option>
+<option value="Prakasam District Jail, Ongole">Prakasam District Jail, Ongole</option>
+<option value="Nellore District Jail, Nellore">Nellore District Jail, Nellore</option>
+<option value="Chittoor District Jail, Chittoor">Chittoor District Jail, Chittoor</option>
+<option value="Kadapa District Jail, Kadapa">Kadapa District Jail, Kadapa</option>
+<option value="Kurnool District Jail, Kurnool">Kurnool District Jail, Kurnool</option>
+<option value="Anantapur District Jail, Anantapur">Anantapur District Jail, Anantapur</option>
+
+<!-- Sub-Jails -->
+<option value="Srikakulam Sub-Jail, Srikakulam">Srikakulam Sub-Jail, Srikakulam</option>
+<option value="Vizianagaram Sub-Jail, Vizianagaram">Vizianagaram Sub-Jail, Vizianagaram</option>
+<option value="Palasa Sub-Jail, Palasa">Palasa Sub-Jail, Palasa</option>
+<option value="Parvathipuram Sub-Jail, Parvathipuram">Parvathipuram Sub-Jail, Parvathipuram</option>
+<option value="Bobbili Sub-Jail, Bobbili">Bobbili Sub-Jail, Bobbili</option>
+<option value="Amadalavalasa Sub-Jail, Amadalavalasa">Amadalavalasa Sub-Jail, Amadalavalasa</option>
+<option value="Kakinada Sub-Jail, Kakinada">Kakinada Sub-Jail, Kakinada</option>
+<option value="Rajahmundry Sub-Jail, Rajahmundry">Rajahmundry Sub-Jail, Rajahmundry</option>
+<option value="Amalapuram Sub-Jail, Amalapuram">Amalapuram Sub-Jail, Amalapuram</option>
+<option value="Tuni Sub-Jail, Tuni">Tuni Sub-Jail, Tuni</option>
+<option value="Eluru Sub-Jail, Eluru">Eluru Sub-Jail, Eluru</option>
+<option value="Gudivada Sub-Jail, Gudivada">Gudivada Sub-Jail, Gudivada</option>
+<option value="Narsapur Sub-Jail, Narsapur">Narsapur Sub-Jail, Narsapur</option>
+<option value="Guntur Sub-Jail, Guntur">Guntur Sub-Jail, Guntur</option>
+<option value="Tenali Sub-Jail, Tenali">Tenali Sub-Jail, Tenali</option>
+<option value="Narasaraopet Sub-Jail, Narasaraopet">Narasaraopet Sub-Jail, Narasaraopet</option>
+<option value="Ongole Sub-Jail, Ongole">Ongole Sub-Jail, Ongole</option>
+<option value="Chirala Sub-Jail, Chirala">Chirala Sub-Jail, Chirala</option>
+<option value="Nellore Sub-Jail, Nellore">Nellore Sub-Jail, Nellore</option>
+<option value="Gudur Sub-Jail, Gudur">Gudur Sub-Jail, Gudur</option>
+<option value="Chittoor Sub-Jail, Chittoor">Chittoor Sub-Jail, Chittoor</option>
+<option value="Tirupati Sub-Jail, Tirupati">Tirupati Sub-Jail, Tirupati</option>
+<option value="Kadapa Sub-Jail, Kadapa">Kadapa Sub-Jail, Kadapa</option>
+<option value="Proddatur Sub-Jail, Proddatur">Proddatur Sub-Jail, Proddatur</option>
+<option value="Kurnool Sub-Jail, Kurnool">Kurnool Sub-Jail, Kurnool</option>
+<option value="Anantapur Sub-Jail, Anantapur">Anantapur Sub-Jail, Anantapur</option>
+<option value="Hindupur Sub-Jail, Hindupur">Hindupur Sub-Jail, Hindupur</option>
+<option value="Dharmavaram Sub-Jail, Dharmavaram">Dharmavaram Sub-Jail, Dharmavaram</option>
+
+<option value="District Jail Tezu, Tezu, Lohit District">District Jail Tezu, Tezu, Lohit District</option>
+<option value="Sub Jail Changlang, Changlang District, Changlang">Sub Jail Changlang, Changlang District, Changlang</option>
+<option value="Sub Jail Khonsa, Khonsa District Tirap">Sub Jail Khonsa, Khonsa District Tirap</option>
+ </optgroup>
+ 
+<optgroup label="Arunachal Pradesh">Arunachal Pradesh</optgroup> 
+ 
+  <option value="District Jail, Jully Itanagar">District Jail, Jully Itanagar</option>
+  <option value="District Jail, Tezu">District Jail, Tezu</option>
+  </optgroup>
+
+<optgroup label="Assam">Assam</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Guwahati">Central Jail, Guwahati</option>
+    <option value="Central Jail, Tezpur">Central Jail, Tezpur</option>
+    <option value="Central Jail, Silchar">Central Jail, Silchar</option>
+    <option value="Central Jail, Dibrugarh">Central Jail, Dibrugarh</option>
+    <option value="Central Jail, Jorhat">Central Jail, Jorhat</option>
+    <option value="Central Jail, Nagaon">Central Jail, Nagaon</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Nalbari">District Jail, Nalbari</option>
+    <option value="District Jail, Barpeta">District Jail, Barpeta</option>
+    <option value="District Jail, Kokrajhar">District Jail, Kokrajhar</option>
+    <option value="District Jail, Dhubri">District Jail, Dhubri</option>
+    <option value="District Jail, Goalpara">District Jail, Goalpara</option>
+    <option value="District Jail, Hailakandi">District Jail, Hailakandi</option>
+    <option value="District Jail, Karimganj">District Jail, Karimganj</option>
+    <option value="District Jail, North Lakhimpur">District Jail, North Lakhimpur</option>
+    <option value="District Jail, Sivasagar">District Jail, Sivasagar</option>
+    <option value="District Jail, Dhemaji">District Jail, Dhemaji</option>
+    <option value="District Jail, Udalguri">District Jail, Udalguri</option>
+  </optgroup>
+
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Nagaon">Special Jail, Nagaon</option>
+  </optgroup>
+
+<optgroup label="Bihar">Bihar</optgroup>
+<!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Beur, Patna">Central Jail, Beur, Patna</option>
+    <option value="Central Jail, Buxar">Central Jail, Buxar</option>
+    <option value="Central Jail, Gaya">Central Jail, Gaya</option>
+    <option value="Central Jail, Motihari">Central Jail, Motihari</option>
+    <option value="Central Jail, Purnea">Central Jail, Purnea</option>
+    <option value="Special Central Jail, Bhagalpur">Special Central Jail, Bhagalpur</option>
+    <option value="Shahid Khudi Ram Bose Central Jail, Bhagalpur">Shahid Khudi Ram Bose Central Jail, Bhagalpur</option>
+    <option value="Shahid Jubba Sahni Central Jail, Bhagalpur">Shahid Jubba Sahni Central Jail, Bhagalpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Bettiah">District Jail, Bettiah</option>
+    <option value="District Jail, Sitamarhi">District Jail, Sitamarhi</option>
+    <option value="District Jail, Phulwarisharif, Patna">District Jail, Phulwarisharif, Patna</option>
+    <option value="District Jail, Biharsharif">District Jail, Biharsharif</option>
+    <option value="District Jail, Hajipur">District Jail, Hajipur</option>
+    <option value="District Jail, Bhabhua, Kaimur">District Jail, Bhabhua, Kaimur</option>
+    <option value="District Jail, Sasaram">District Jail, Sasaram</option>
+    <option value="District Jail, Bikramganj, Rohtas">District Jail, Bikramganj, Rohtas</option>
+    <option value="District Jail, Arra">District Jail, Arra</option>
+    <option value="District Jail, Gopalganj">District Jail, Gopalganj</option>
+    <option value="District Jail, Siwan">District Jail, Siwan</option>
+    <option value="District Jail, Chhapra">District Jail, Chhapra</option>
+    <option value="District Jail, Darbhanga">District Jail, Darbhanga</option>
+    <option value="District Jail, Madhubani">District Jail, Madhubani</option>
+    <option value="District Jail, Samastipur">District Jail, Samastipur</option>
+    <option value="District Jail, Sitamarhi">District Jail, Sitamarhi</option>
+    <option value="District Jail, Sheohar">District Jail, Sheohar</option>
+    <option value="District Jail, Khagaria">District Jail, Khagaria</option>
+    <option value="District Jail, Begusarai">District Jail, Begusarai</option>
+    <option value="District Jail, Banka">District Jail, Banka</option>
+    <option value="District Jail, Sheikhpura">District Jail, Sheikhpura</option>
+    <option value="District Jail, Lakhisarai">District Jail, Lakhisarai</option>
+    <option value="District Jail, Jamui">District Jail, Jamui</option>
+    <option value="District Jail, Munger">District Jail, Munger</option>
+  
+  
+          <option value="Sub Jail, Alot">Sub Jail, Alot</option>
+        <option value="Sub Jail, Ambah">Sub Jail, Ambah</option>
+        <option value="Sub Jail, Anuppur">Sub Jail, Anuppur</option>
+        <!-- Add the new sub jails here -->
+        <option value="Sub Jail, Barh, Patna">Sub Jail, Barh, Patna</option>
+        <option value="Sub Jail, Danapur, Patna">Sub Jail, Danapur, Patna</option>
+        <option value="Sub Jail, Masaurhi, Patna">Sub Jail, Masaurhi, Patna</option>
+        <option value="Sub Jail, Hilsa, Nalanda">Sub Jail, Hilsa, Nalanda</option>
+        <option value="Sub Jail, Benipur, Darbhanga">Sub Jail, Benipur, Darbhanga</option>
+        <option value="Sub Jail, Jhanjharpur, Madhubani">Sub Jail, Jhanjharpur, Madhubani</option>
+        <option value="Sub Jail, Rosera, Samastipur">Sub Jail, Rosera, Samastipur</option>
+        <option value="Sub Jail, Dalsinghsarai, Samastipur">Sub Jail, Dalsinghsarai, Samastipur</option>
+        <option value="Sub Jail, Nawgachhia, Bhagalpur">Sub Jail, Nawgachhia, Bhagalpur</option>
+        <option value="Sub Jail, Bikramganj, Rohtas">Sub Jail, Bikramganj, Rohtas</option>
+        <option value="Sub Jail, Buxar">Sub Jail, Buxar</option>
+        <option value="Sub Jail, Bagaha, West Champaran">Sub Jail, Bagaha, West Champaran</option>
+        <option value="Sub Jail, Udakishanganj, Madhepura">Sub Jail, Udakishanganj, Madhepura</option>
+    </optgroup>
+	
+	
+<optgroup label="Chhattisgarh">Chhattisgarh</optgroup>
+<option value="Central Jail Raipur">Central Jail Raipur</option>
+<option value="Central Jail Jagdalpur">Central Jail Jagdalpur</option>
+<option value="Central Jail Bilaspur">Central Jail Bilaspur</option>
+<option value="Central Jail Ambikapur">Central Jail Ambikapur</option>
+<option value="Central Jail Durg">Central Jail Durg</option>
+<option value="District Jail Mahasamund">District Jail Mahasamund</option>
+ </optgroup>
+
+<optgroup label="Gujarat">Gujarat</optgroup>
+    <option value="Central Jail, Ahmedabad">Central Jail, Ahmedabad</option>
+    <option value="Central Jail, Vadodara">Central Jail, Vadodara</option>
+    <option value="Central Jail, Rajkot">Central Jail, Rajkot</option>
+    <option value="Central Jail, Lajpore">Central Jail, Lajpore</option>
+    <option value="District Jail, Surat">District Jail, Surat</option>
+    <option value="District Jail, Bharuch">District Jail, Bharuch</option>
+    <option value="District Jail, Bhavnagar">District Jail, Bhavnagar</option>
+    <option value="District Jail, Dahod">District Jail, Dahod</option>
+    <option value="District Jail, Gandhinagar">District Jail, Gandhinagar</option>
+    <option value="District Jail, Jamnagar">District Jail, Jamnagar</option>
+    <option value="District Jail, Junagadh">District Jail, Junagadh</option>
+    <option value="District Jail, Kheda">District Jail, Kheda</option>
+    <option value="District Jail, Kutch">District Jail, Kutch</option>
+    <option value="District Jail, Mehsana">District Jail, Mehsana</option>
+    <option value="District Jail, Narmada">District Jail, Narmada</option>
+    <option value="District Jail, Navsari">District Jail, Navsari</option>
+    <option value="District Jail, Patan">District Jail, Patan</option>
+    <option value="District Jail, Porbandar">District Jail, Porbandar</option>
+    <option value="District Jail, Sabarkantha">District Jail, Sabarkantha</option>
+    <option value="District Jail, Tapi">District Jail, Tapi</option>
+    <option value="District Jail, Vadodara Rural">District Jail, Vadodara Rural</option>
+    <option value="District Jail, Valsad">District Jail, Valsad</option>
+    <option value="Sub Jail, Amreli">Sub Jail, Amreli</option>
+    <option value="Sub Jail, Anand">Sub Jail, Anand</option>
+    <option value="Sub Jail, Banaskantha">Sub Jail, Banaskantha</option>
+    <option value="Sub Jail, Botad">Sub Jail, Botad</option>
+    <option value="Sub Jail, Chhota Udepur">Sub Jail, Chhota Udepur</option>
+    <option value="Sub Jail, Devbhoomi Dwarka">Sub Jail, Devbhoomi Dwarka</option>
+    <option value="Sub Jail, Gir Somnath">Sub Jail, Gir Somnath</option>
+    <option value="Sub Jail, Mahisagar">Sub Jail, Mahisagar</option>
+    <option value="Sub Jail, Morbi">Sub Jail, Morbi</option>
+    <option value="Sub Jail, Panchmahal">Sub Jail, Panchmahal</option>
+    <option value="Sub Jail, Surendranagar">Sub Jail, Surendranagar</option>
+    <option value="Women's Jail, Sabarmati">Women's Jail, Sabarmati</option>
+    <option value="Open Jail, Ahmedabad">Open Jail, Ahmedabad</option>
+    <option value="Open Jail, Junagadh">Open Jail, Junagadh</option>
+    <option value="Special Jail, Porbandar">Special Jail, Porbandar</option>
+    <option value="Special Jail, Palara (Bhuj)">Special Jail, Palara (Bhuj)</option>
+	</optgroup>
+
+<optgroup label="Haryana">Haryana</optgroup>
+    <option value="Central Jail, Ambala">Central Jail, Ambala</option>
+    <option value="Central Jail-I, Hisar">Central Jail-I, Hisar</option>
+    <option value="Central Jail-II, Hisar">Central Jail-II, Hisar</option>
+    <option value="District Jail, Bhiwani">District Jail, Bhiwani</option>
+    <option value="District Jail, Faridabad">District Jail, Faridabad</option>
+    <option value="District Jail, Gurugram">District Jail, Gurugram</option>
+    <option value="District Jail, Jind">District Jail, Jind</option>
+    <option value="District Jail, Kaithal">District Jail, Kaithal</option>
+    <option value="District Jail, Karnal">District Jail, Karnal</option>
+    <option value="District Jail, Kurukshetra">District Jail, Kurukshetra</option>
+    <option value="District Jail, Narnaul">District Jail, Narnaul</option>
+    <option value="District Jail, Rewari">District Jail, Rewari</option>
+    <option value="District Jail, Rohtak">District Jail, Rohtak</option>
+    <option value="District Jail, Sirsa">District Jail, Sirsa</option>
+    <option value="District Jail, Sonepat">District Jail, Sonepat</option>
+    <option value="District Jail, Yamunanagar">District Jail, Yamunanagar</option>
+	</optgroup>
+
+<optgroup label="Himachal Pradesh">Himachal Pradesh</optgroup>
+
+<option value="Central Jail, Shimla">Central Jail, Shimla</option>
+<option value="District Jail, Kullu">District Jail, Kullu</option>
+<option value="District Jail, Mandi">District Jail, Mandi</option>
+<option value="District Jail, Solan">District Jail, Solan</option>
+<option value="District Jail, Una">District Jail, Una</option>
+<option value="Sub Jail, Bilaspur">Sub Jail, Bilaspur</option>
+<option value="Sub Jail, Chamba">Sub Jail, Chamba</option>
+<option value="Sub Jail, Hamirpur">Sub Jail, Hamirpur</option>
+<option value="Sub Jail, Kangra">Sub Jail, Kangra</option>
+<option value="Sub Jail, Kinnaur">Sub Jail, Kinnaur</option>
+<option value="Sub Jail, Lahaul & Spiti">Sub Jail, Lahaul & Spiti</option>
+<option value="Sub Jail, Shimla">Sub Jail, Shimla</option>
+ </optgroup>
+
+<optgroup label="Jharkhand">Jharkhand</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Birsa Munda Central Jail, Hotwar, Ranchi">Central Jail, Birsa Munda Central Jail, Hotwar, Ranchi</option>
+    <option value="Central Jail, Chaibasa">Central Jail, Chaibasa</option>
+    <option value="Central Jail, Dumka">Central Jail, Dumka</option>
+    <option value="Central Jail, Hazaribagh">Central Jail, Hazaribagh</option>
+    <option value="Central Jail, Jamshedpur">Central Jail, Jamshedpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Dhanbad">District Jail, Dhanbad</option>
+    <option value="District Jail, Bokaro">District Jail, Bokaro</option>
+    <option value="District Jail, Giridih">District Jail, Giridih</option>
+    <option value="District Jail, Godda">District Jail, Godda</option>
+    <option value="District Jail, Gumla">District Jail, Gumla</option>
+    <option value="District Jail, Khunti">District Jail, Khunti</option>
+    <option value="District Jail, Lohardaga">District Jail, Lohardaga</option>
+    <option value="District Jail, Pakur">District Jail, Pakur</option>
+    <option value="District Jail, Palamu">District Jail, Palamu</option>
+    <option value="District Jail, Ramgarh">District Jail, Ramgarh</option>
+    <option value="District Jail, Saraikela-Kharsawan">District Jail, Saraikela-Kharsawan</option>
+    <option value="District Jail, Simdega">District Jail, Simdega</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Bermo">Sub Jail, Bermo</option>
+    <option value="Sub Jail, Deoghar">Sub Jail, Deoghar</option>
+    <option value="Sub Jail, Jhumri Tilaiya">Sub Jail, Jhumri Tilaiya</option>
+    <option value="Sub Jail, Mihijam">Sub Jail, Mihijam</option>
+    <option value="Sub Jail, Nawadih">Sub Jail, Nawadih</option>
+    <option value="Sub Jail, Noamundi">Sub Jail, Noamundi</option>
+    <option value="Sub Jail, Rajmahal">Sub Jail, Rajmahal</option>
+    <option value="Sub Jail, Silli">Sub Jail, Silli</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+<optgroup label="Karnataka">Karnataka</optgroup>
+<option value="Central Prison, Bangalore">Central Prison, Bangalore</option>
+<option value="Central Prison for Women, Bangalore">Central Prison for Women, Bangalore</option>
+<option value="District Jail, Belagavi (Belgaum)">District Jail, Belagavi (Belgaum)</option>
+<option value="District Jail, Ballari (Bellary)">District Jail, Ballari (Bellary)</option>
+<option value="District Jail, Bidar">District Jail, Bidar</option>
+<option value="District Jail, Chamarajanagar">District Jail, Chamarajanagar</option>
+<option value="District Jail, Chikkamagaluru (Chikmagalur)">District Jail, Chikkamagaluru (Chikmagalur)</option>
+<option value="District Jail, Chitradurga">District Jail, Chitradurga</option>
+<option value="District Jail, Davanagere">District Jail, Davanagere</option>
+<option value="District Jail, Dharwad">District Jail, Dharwad</option>
+<option value="District Jail, Gadag">District Jail, Gadag</option>
+<option value="District Jail, Hassan">District Jail, Hassan</option>
+<option value="District Jail, Haveri">District Jail, Haveri</option>
+<option value="District Jail, Kalaburagi (Gulbarga)">District Jail, Kalaburagi (Gulbarga)</option>
+<option value="District Jail, Kolar">District Jail, Kolar</option>
+<option value="District Jail, Koppal">District Jail, Koppal</option>
+<option value="District Jail, Madikeri (Coorg)">District Jail, Madikeri (Coorg)</option>
+<option value="District Jail, Mandya">District Jail, Mandya</option>
+<option value="District Jail, Mangaluru (Mangalore)">District Jail, Mangaluru (Mangalore)</option>
+<option value="District Jail, Mysuru (Mysore)">District Jail, Mysuru (Mysore)</option>
+<option value="District Jail, Raichur">District Jail, Raichur</option>
+<option value="District Jail, Ramanagara">District Jail, Ramanagara</option>
+<option value="District Jail, Shivamogga (Shimoga)">District Jail, Shivamogga (Shimoga)</option>
+<option value="District Jail, Tumakuru (Tumkur)">District Jail, Tumakuru (Tumkur)</option>
+<option value="District Jail, Udupi">District Jail, Udupi</option>
+<option value="District Jail, Vijayapura (Bijapur)">District Jail, Vijayapura (Bijapur)</option>
+<option value="District Jail, Yadgir">District Jail, Yadgir</option>
+<option value="Sub-Jail, Bagalkot">Sub-Jail, Bagalkot</option>
+<option value="Sub-Jail, Chickballapur">Sub-Jail, Chickballapur</option>
+<option value="Sub-Jail, Chikkodi">Sub-Jail, Chikkodi</option>
+<option value="Sub-Jail, Hassan">Sub-Jail, Hassan</option>
+<option value="Sub-Jail, Hunsur">Sub-Jail, Hunsur</option>
+<option value="Sub-Jail, K R Pet">Sub-Jail, K R Pet</option>
+<option value="Sub-Jail, Kolar Gold Fields (KGF)">Sub-Jail, Kolar Gold Fields (KGF)</option>
+<option value="Sub-Jail, Malavalli">Sub-Jail, Malavalli</option>
+<option value="Sub-Jail, Mandya">Sub-Jail, Mandya</option>
+<option value="Sub-Jail, Mudhol">Sub-Jail, Mudhol</option>
+<option value="Sub-Jail, Pavagada">Sub-Jail, Pavagada</option>
+<option value="Sub-Jail, Puttur">Sub-Jail, Puttur</option>
+<option value="Sub-Jail, Ramanagara">Sub-Jail, Ramanagara</option>
+<option value="Sub-Jail, Sagar">Sub-Jail, Sagar</option>
+<option value="Sub-Jail, Sakleshpur">Sub-Jail, Sakleshpur</option>
+<option value="Sub-Jail, Sandur">Sub-Jail, Sandur</option>
+<option value="Sub-Jail, Shikaripura">Sub-Jail, Shikaripura</option>
+<option value="Sub-Jail, Sindhanur">Sub-Jail, Sindhanur</option>
+<option value="Sub-Jail, Sorab">Sub-Jail, Sorab</option>
+<option value="Sub-Jail, Srirangapatna">Sub-Jail, Srirangapatna</option>
+<option value="Sub-Jail, Tirumakudalu Narasipura (T. Narasipura)">Sub-Jail, Tirumakudalu Narasipura (T. Narasipura)</option>
+<option value="Sub-Jail, Yadgir">Sub-Jail, Yadgir</option>
+ </optgroup>
+ 
+<optgroup label="Kerala">Kerala</optgroup>
+  <!-- Central Prisons -->
+  <optgroup label="Central Prisons">
+    <option value="Central Prison and Correctional Home, Poojappura, Thiruvananthapuram">Central Prison and Correctional Home, Poojappura, Thiruvananthapuram</option>
+    <option value="Central Prison and Correctional Home, Viyyur, Thrissur">Central Prison and Correctional Home, Viyyur, Thrissur</option>
+    <option value="Central Prison and Correctional Home, Kannur, Pallikkunnu">Central Prison and Correctional Home, Kannur, Pallikkunnu</option>
+    <option value="Central Prison and Correctional Home, Tavanur, Malappuram">Central Prison and Correctional Home, Tavanur, Malappuram</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Thiruvananthapuram (Poojappura)">District Jail, Thiruvananthapuram (Poojappura)</option>
+    <option value="District Jail, Kollam">District Jail, Kollam</option>
+    <option value="District Jail, Pathanamthitta">District Jail, Pathanamthitta</option>
+    <option value="District Jail, Alappuzha">District Jail, Alappuzha</option>
+    <option value="District Jail, Kottayam">District Jail, Kottayam</option>
+    <option value="District Jail, Idukki (Muttom)">District Jail, Idukki (Muttom)</option>
+    <option value="District Jail, Ernakulam">District Jail, Ernakulam</option>
+    <option value="District Jail, Thrissur (Viyyur)">District Jail, Thrissur (Viyyur)</option>
+    <option value="District Jail, Palakkad (Malampuzha)">District Jail, Palakkad (Malampuzha)</option>
+    <option value="District Jail, Kozhikode">District Jail, Kozhikode</option>
+    <option value="District Jail, Kannur">District Jail, Kannur</option>
+    <option value="District Jail, Wayanad (Mananthavady)">District Jail, Wayanad (Mananthavady)</option>
+    <option value="District Jail, Kasaragod (Hosdurg)">District Jail, Kasaragod (Hosdurg)</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Attingal">Sub Jail, Attingal</option>
+    <option value="Sub Jail, Meenachil">Sub Jail, Meenachil</option>
+    <option value="Sub Jail, Peerumade">Sub Jail, Peerumade</option>
+    <option value="Sub Jail, Mattancherry">Sub Jail, Mattancherry</option>
+    <option value="Sub Jail, Ernakulam">Sub Jail, Ernakulam</option>
+    <option value="Sub Jail, Aluva">Sub Jail, Aluva</option>
+    <option value="Sub Jail, Chavakkad">Sub Jail, Chavakkad</option>
+    <option value="Sub Jail, Viyyur">Sub Jail, Viyyur</option>
+    <option value="Sub Jail, Alathur">Sub Jail, Alathur</option>
+    <option value="Sub Jail, Ottappalam">Sub Jail, Ottappalam</option>
+    <option value="Sub Jail, Perinthalmanna">Sub Jail, Perinthalmanna</option>
+    <option value="Sub Jail, Ponnani">Sub Jail, Ponnani</option>
+    <option value="Sub Jail, Tirur">Sub Jail, Tirur</option>
+    <option value="Sub Jail, Koyilandy">Sub Jail, Koyilandy</option>
+    <option value="Sub Jail, Vatakara">Sub Jail, Vatakara</option>
+    <option value="Sub Jail, Kannur">Sub Jail, Kannur</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+ 
+
+<optgroup label="Madhya Pradesh">Madhya Pradesh</optgroup>
+<option value="Central Jail, Bhopal">Central Jail, Bhopal</option>
+<option value="Central Jail, Indore">Central Jail, Indore</option>
+<option value="Central Jail, Jabalpur">Central Jail, Jabalpur</option>
+<option value="Central Jail, Gwalior">Central Jail, Gwalior</option>
+<option value="Central Jail, Ujjain">Central Jail, Ujjain</option>
+<option value="Central Jail, Sagar">Central Jail, Sagar</option>
+<option value="Central Jail, Rewa">Central Jail, Rewa</option>
+<option value="Central Jail, Satna">Central Jail, Satna</option>
+<option value="Central Jail, Ratlam">Central Jail, Ratlam</option>
+<option value="Central Jail, Khandwa">Central Jail, Khandwa</option>
+<option value="Central Jail, Khargone">Central Jail, Khargone</option>
+<option value="Central Jail, Hoshangabad">Central Jail, Hoshangabad</option>
+<option value="Central Jail, Narsinghpur">Central Jail, Narsinghpur</option>
+<option value="Central Jail, Chhindwara">Central Jail, Chhindwara</option>
+<option value="Central Jail, Shahdol">Central Jail, Shahdol</option>
+<option value="Central Jail, Singrauli">Central Jail, Singrauli</option>
+<option value="Central Jail, Morena">Central Jail, Morena</option>
+<option value="Central Jail, Dhar">Central Jail, Dhar</option>
+<option value="Central Jail, Dewas">Central Jail, Dewas</option>
+<option value="Central Jail, Neemuch">Central Jail, Neemuch</option>
+<option value="Central Jail, Sehore">Central Jail, Sehore</option>
+<option value="Central Jail, Mandsaur">Central Jail, Mandsaur</option>
+<option value="Central Jail, Harda">Central Jail, Harda</option>
+<option value="Central Jail, Betul">Central Jail, Betul</option>
+<option value="Central Jail, Seoni">Central Jail, Seoni</option>
+<option value="Central Jail, Balaghat">Central Jail, Balaghat</option>
+<option value="Central Jail, Khandwa">Central Jail, Khandwa</option>
+<option value="Central Jail, Khargone">Central Jail, Khargone</option>
+<option value="District Jail, Anuppur">District Jail, Anuppur</option>
+<option value="District Jail, Ashok Nagar">District Jail, Ashok Nagar</option>
+<option value="District Jail, Barwani">District Jail, Barwani</option>
+<option value="District Jail, Burhanpur">District Jail, Burhanpur</option>
+<option value="District Jail, Chhatarpur">District Jail, Chhatarpur</option>
+<option value="District Jail, Damoh">District Jail, Damoh</option>
+<option value="District Jail, Datia">District Jail, Datia</option>
+<option value="District Jail, Dewas">District Jail, Dewas</option>
+<option value="District Jail, Dhar">District Jail, Dhar</option>
+<option value="District Jail, Dindori">District Jail, Dindori</option>
+<option value="District Jail, Guna">District Jail, Guna</option>
+<option value="District Jail, Harda">District Jail, Harda</option>
+<option value="District Jail, Hoshangabad">District Jail, Hoshangabad</option>
+<option value="District Jail, Khandwa">District Jail, Khandwa</option>
+<option value="District Jail, Khargone">District Jail, Khargone</option>
+<option value="District Jail, Mandla">District Jail, Mandla</option>
+<option value="District Jail, Mandsaur">District Jail, Mandsaur</option>
+<option value="District Jail, Neemuch">District Jail, Neemuch</option>
+<option value="District Jail, Panna">District Jail, Panna</option>
+<option value="District Jail, Raisen">District Jail, Raisen</option>
+<option value="District Jail, Rajgarh">District Jail, Rajgarh</option>
+<option value="District Jail, Ratlam">District Jail, Ratlam</option>
+<option value="District Jail, Rewa">District Jail, Rewa</option>
+<option value="District Jail, Sagar">District Jail, Sagar</option>
+<option value="District Jail, Satna">District Jail, Satna</option>
+<option value="District Jail, Sehore">District Jail, Sehore</option>
+<option value="District Jail, Seoni">District Jail, Seoni</option>
+<option value="District Jail, Shahdol">District Jail, Shahdol</option>
+<option value="District Jail, Shajapur">District Jail, Shajapur</option>
+<option value="District Jail, Sheopur">District Jail, Sheopur</option>
+<option value="District Jail, Shivpuri">District Jail, Shivpuri</option>
+<option value="District Jail, Sidhi">District Jail, Sidhi</option>
+<option value="District Jail, Singrauli">District Jail, Singrauli</option>
+<option value="District Jail, Tikamgarh">District Jail, Tikamgarh</option>
+<option value="District Jail, Ujjain">District Jail, Ujjain</option>
+<option value="District Jail, Vidisha">District Jail, Vidisha</option>
+<option value="Special Sub-Jail, Amla">Special Sub-Jail, Amla</option>
+<option value="Special Sub-Jail, Badwani">Special Sub-Jail, Badwani</option>
+<option value="Special Sub-Jail, Burhar">Special Sub-Jail, Burhar</option>
+<option value="Special Sub-Jail, Dabra">Special Sub-Jail, Dabra</option>
+<option value="Special Sub-Jail, Deosar">Special Sub-Jail, Deosar</option>
+<option value="Special Sub-Jail, Gwalior">Special Sub-Jail, Gwalior</option>
+<option value="Special Sub-Jail, Ichhawar">Special Sub-Jail, Ichhawar</option>
+<option value="Special Sub-Jail, Itarsi">Special Sub-Jail, Itarsi</option>
+<option value="Special Sub-Jail, Khachrod">Special Sub-Jail, Khachrod</option>
+<option value="Special Sub-Jail, Lahar">Special Sub-Jail, Lahar</option>
+<option value="Special Sub-Jail, Lateri">Special Sub-Jail, Lateri</option>
+<option value="Special Sub-Jail, Mandav">Special Sub-Jail, Mandav</option>
+<option value="Special Sub-Jail, Manpur">Special Sub-Jail, Manpur</option>
+<option value="Special Sub-Jail, Mhow">Special Sub-Jail, Mhow</option>
+<option value="Special Sub-Jail, Multai">Special Sub-Jail, Multai</option>
+<option value="Special Sub-Jail, Niwas">Special Sub-Jail, Niwas</option>
+<option value="Special Sub-Jail, Pawai">Special Sub-Jail, Pawai</option>
+<option value="Special Sub-Jail, Pichhore">Special Sub-Jail, Pichhore</option>
+<option value="Special Sub-Jail, Raghogarh">Special Sub-Jail, Raghogarh</option>
+<option value="Special Sub-Jail, Ranapur">Special Sub-Jail, Ranapur</option>
+<option value="Special Sub-Jail, Rehti">Special Sub-Jail, Rehti</option>
+<option value="Special Sub-Jail, Rithi">Special Sub-Jail, Rithi</option>
+<option value="Special Sub-Jail, Shahpur">Special Sub-Jail, Shahpur</option>
+<option value="Special Sub-Jail, Sheopur">Special Sub-Jail, Sheopur</option>
+<option value="Special Sub-Jail, Sironj">Special Sub-Jail, Sironj</option>
+<option value="Special Sub-Jail, Umariya">Special Sub-Jail, Umariya</option>
+<option value="Special Sub-Jail, Vidisha">Special Sub-Jail, Vidisha</option>
+ </optgroup>
+ 
+
+<optgroup label="Maharashtra">Maharashtra</optgroup>
+<!-- Central Jails -->
+<option value="Arthur Road Jail, Mumbai">Arthur Road Jail, Mumbai</option>
+<option value="Yerawada Central Jail, Pune">Yerawada Central Jail, Pune</option>
+<option value="Nagpur Central Jail, Nagpur">Nagpur Central Jail, Nagpur</option>
+<option value="Taloja Central Jail, Navi Mumbai">Taloja Central Jail, Navi Mumbai</option>
+<option value="Thane Central Jail, Thane">Thane Central Jail, Thane</option>
+<option value="Harsul Central Jail, Aurangabad">Harsul Central Jail, Aurangabad</option>
+<option value="Kolhapur Central Prison, Kalamba">Kolhapur Central Prison, Kalamba</option>
+<option value="Nashik Road Central Prison, Nashik">Nashik Road Central Prison, Nashik</option>
+
+<!-- District Jails -->
+<option value="Ahmednagar District Jail, Ahmednagar">Ahmednagar District Jail, Ahmednagar</option>
+<option value="Akola District Jail, Akola">Akola District Jail, Akola</option>
+<option value="Amravati District Jail, Amravati">Amravati District Jail, Amravati</option>
+<option value="Beed District Jail, Beed">Beed District Jail, Beed</option>
+<option value="Bhandara District Jail, Bhandara">Bhandara District Jail, Bhandara</option>
+<option value="Buldhana District Jail, Buldhana">Buldhana District Jail, Buldhana</option>
+<option value="Chandrapur District Jail, Chandrapur">Chandrapur District Jail, Chandrapur</option>
+<option value="Dhule District Jail, Dhule">Dhule District Jail, Dhule</option>
+<option value="Gadchiroli District Jail, Gadchiroli">Gadchiroli District Jail, Gadchiroli</option>
+<option value="Gondia District Jail, Gondia">Gondia District Jail, Gondia</option>
+<option value="Hingoli District Jail, Hingoli">Hingoli District Jail, Hingoli</option>
+<option value="Jalgaon District Jail, Jalgaon">Jalgaon District Jail, Jalgaon</option>
+<option value="Jalna District Jail, Jalna">Jalna District Jail, Jalna</option>
+<option value="Latur District Jail, Latur">Latur District Jail, Latur</option>
+<option value="Nanded District Jail, Nanded">Nanded District Jail, Nanded</option>
+<option value="Osmanabad District Jail, Osmanabad">Osmanabad District Jail, Osmanabad</option>
+<option value="Palghar District Jail, Palghar">Palghar District Jail, Palghar</option>
+<option value="Parbhani District Jail, Parbhani">Parbhani District Jail, Parbhani</option>
+<option value="Raigad District Jail, Alibaug">Raigad District Jail, Alibaug</option>
+<option value="Ratnagiri District Jail, Ratnagiri">Ratnagiri District Jail, Ratnagiri</option>
+<option value="Sangli District Jail, Sangli">Sangli District Jail, Sangli</option>
+<option value="Satara District Jail, Satara">Satara District Jail, Satara</option>
+<option value="Sindhudurg District Jail, Sindhudurg">Sindhudurg District Jail, Sindhudurg</option>
+<option value="Solapur District Jail, Solapur">Solapur District Jail, Solapur</option>
+<option value="Wardha District Jail, Wardha">Wardha District Jail, Wardha</option>
+<option value="Washim District Jail, Washim">Washim District Jail, Washim</option>
+
+<!-- Other Jails -->
+<option value="Open Colony Aatpadi, Sangli">Open Colony Aatpadi, Sangli</option>
+<option value="Special Jail Ratnagiri, Ratnagiri">Special Jail Ratnagiri, Ratnagiri</option>
+ </optgroup>
+
+<optgroup label="Manipur">Manipur</optgroup>
+    <option value="Manipur Central Jail, Sajiwa">Manipur Central Jail, Sajiwa</option>
+    <option value="Manipur Central Jail, Imphal">Manipur Central Jail, Imphal</option>
+    <option value="District Jail, Chandel">District Jail, Chandel</option>
+    <option value="District Jail, Churachandpur">District Jail, Churachandpur</option>
+    <option value="Sub Jail, Jiribam">Sub Jail, Jiribam</option>
+	<optgroup>
+
+<optgroup label="Meghalaya">Meghalaya</optgroup>
+    <option value="Central Jail, Shillong">Central Jail, Shillong</option>
+    <option value="District Jail, Jowai">District Jail, Jowai</option>
+    <option value="District Jail, Tura">District Jail, Tura</option>
+    <option value="District Jail, Nongpoh">District Jail, Nongpoh</option>
+    <option value="District Jail, Williamnagar">District Jail, Williamnagar</option>
+ </optgroup>
+ 
+<optgroup label="Mizoram">Mizoram</optgroup>
+    <option value="Central Jail, Aizawl">Central Jail, Aizawl</option>
+    <option value="District Jail, Aizawl">District Jail, Aizawl</option>
+    <option value="District Jail, Sazaikawn (Lunglei)">District Jail, Sazaikawn (Lunglei)</option>
+ </optgroup>
+ 
+<optgroup label="Nagaland">Nagaland</optgroup>
+    <option value="Central Jail, Dimapur">Central Jail, Dimapur</option>
+    <option value="District Jail, Dimapur">District Jail, Dimapur</option>
+    <option value="District Jail, Kohima">District Jail, Kohima</option>
+    <option value="District Jail, Mokokchung">District Jail, Mokokchung</option>
+    <option value="District Jail, Mon">District Jail, Mon</option>
+    <option value="District Jail, Phek">District Jail, Phek</option>
+    <option value="District Jail, Wokha">District Jail, Wokha</option>
+    <option value="District Jail, Zunheboto">District Jail, Zunheboto</option>
+	</optgroup>
+ 
+<optgroup label="Odisha">Odisha</optgroup>
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Bhubaneswar">Special Jail, Bhubaneswar</option>
+    <option value="Special Jail, Rourkela">Special Jail, Rourkela</option>
+  </optgroup>
+
+  <!-- Circle Jails -->
+  <optgroup label="Circle Jails">
+    <option value="Circle Jail, Baripada">Circle Jail, Baripada</option>
+    <option value="Circle Jail, Berhampur">Circle Jail, Berhampur</option>
+    <option value="Circle Jail, Choudwar">Circle Jail, Choudwar</option>
+    <option value="Circle Jail, Koraput">Circle Jail, Koraput</option>
+    <option value="Circle Jail, Sambalpur">Circle Jail, Sambalpur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Angul">District Jail, Angul</option>
+    <option value="District Jail, Balangir">District Jail, Balangir</option>
+    <option value="District Jail, Balasore">District Jail, Balasore</option>
+    <option value="District Jail, Bargarh">District Jail, Bargarh</option>
+    <option value="District Jail, Bhadrak">District Jail, Bhadrak</option>
+    <option value="District Jail, Boudh">District Jail, Boudh</option>
+    <option value="District Jail, Cuttack">District Jail, Cuttack</option>
+    <option value="District Jail, Dhenkanal">District Jail, Dhenkanal</option>
+    <option value="District Jail, Ganjam">District Jail, Ganjam</option>
+    <option value="District Jail, Gajapati">District Jail, Gajapati</option>
+    <option value="District Jail, Jharsuguda">District Jail, Jharsuguda</option>
+    <option value="District Jail, Jajpur">District Jail, Jajpur</option>
+    <option value="District Jail, Jagatsinghpur">District Jail, Jagatsinghpur</option>
+    <option value="District Jail, Keonjhar">District Jail, Keonjhar</option>
+    <option value="District Jail, Khordha">District Jail, Khordha</option>
+    <option value="District Jail, Kendrapara">District Jail, Kendrapara</option>
+    <option value="District Jail, Malkangiri">District Jail, Malkangiri</option>
+    <option value="District Jail, Mayurbhanj">District Jail, Mayurbhanj</option>
+    <option value="District Jail, Nabarangpur">District Jail, Nabarangpur</option>
+    <option value="District Jail, Nayagarh">District Jail, Nayagarh</option>
+    <option value="District Jail, Nuapada">District Jail, Nuapada</option>
+    <option value="District Jail, Puri">District Jail, Puri</option>
+    <option value="District Jail, Rayagada">District Jail, Rayagada</option>
+    <option value="District Jail, Sambalpur">District Jail, Sambalpur</option>
+    <option value="District Jail, Sonepur">District Jail, Sonepur</option>
+    <option value="District Jail, Sundargarh">District Jail, Sundargarh</option>
+  </optgroup>
+
+  <!-- Other Jails -->
+  <optgroup label="Other Jails">
+    <option value="Open Air Jail, Jamujhari">Open Air Jail, Jamujhari</option>
+    <option value="Nari Bandi Niketan (Women's Jail), Sambalpur">Nari Bandi Niketan (Women's Jail), Sambalpur</option>
+
+  </optgroup>
+ 
+<optgroup label="Punjab">Punjab</optgroup>
+ <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Patiala">Central Jail, Patiala</option>
+    <option value="Central Jail, Bathinda">Central Jail, Bathinda</option>
+    <option value="Central Jail, Ferozpur">Central Jail, Ferozpur</option>
+    <option value="Central Jail, Amritsar">Central Jail, Amritsar</option>
+    <option value="Central Jail, Gurdaspur">Central Jail, Gurdaspur</option>
+    <option value="Central Jail, Ludhiana">Central Jail, Ludhiana</option>
+    <option value="Central Jail, Jalandhar">Central Jail, Jalandhar</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Nabha">District Jail, Nabha</option>
+    <option value="District Jail, Sangrur">District Jail, Sangrur</option>
+    <option value="District Jail, Faridkot">District Jail, Faridkot</option>
+    <option value="District Jail, Kapurthala">District Jail, Kapurthala</option>
+    <option value="District Jail, Hoshiarpur">District Jail, Hoshiarpur</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Fazilka">Sub Jail, Fazilka</option>
+    <option value="Sub Jail, Moga">Sub Jail, Moga</option>
+    <option value="Sub Jail, Muktsar">Sub Jail, Muktsar</option>
+    <option value="Sub Jail, Patti">Sub Jail, Patti</option>
+    <option value="Sub Jail, Malerkotla">Sub Jail, Malerkotla</option>
+    <option value="Sub Jail, Pathankot">Sub Jail, Pathankot</option>
+   
+  </optgroup>
+ 
+<optgroup label="Rajasthan">Rajasthan</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Ajmer">Central Jail, Ajmer</option>
+    <option value="Central Jail, Bikaner">Central Jail, Bikaner</option>
+    <option value="Central Jail, Jaipur">Central Jail, Jaipur</option>
+    <option value="Central Jail, Jodhpur">Central Jail, Jodhpur</option>
+    <option value="Central Jail, Kota">Central Jail, Kota</option>
+    <option value="Central Jail, Udaipur">Central Jail, Udaipur</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Alwar">District Jail, Alwar</option>
+    <option value="District Jail, Baran">District Jail, Baran</option>
+    <option value="District Jail, Barmer">District Jail, Barmer</option>
+    <option value="District Jail, Bharatpur">District Jail, Bharatpur</option>
+    <option value="District Jail, Bhilwara">District Jail, Bhilwara</option>
+    <option value="District Jail, Chittorgarh">District Jail, Chittorgarh</option>
+    <option value="District Jail, Dausa">District Jail, Dausa</option>
+    <option value="District Jail, Dungarpur">District Jail, Dungarpur</option>
+    <option value="District Jail, Hanumangarh">District Jail, Hanumangarh</option>
+    <option value="District Jail, Jhunjhunu">District Jail, Jhunjhunu</option>
+    <option value="District Jail, Karauli">District Jail, Karauli</option>
+    <option value="District Jail, Sirohi">District Jail, Sirohi</option>
+    <option value="District Jail, Tonk">District Jail, Tonk</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Beawar">Sub Jail, Beawar</option>
+    <option value="Sub Jail, Ganganagar">Sub Jail, Ganganagar</option>
+    <option value="Sub Jail, Hindaun">Sub Jail, Hindaun</option>
+    <option value="Sub Jail, Jhalawar">Sub Jail, Jhalawar</option>
+    <option value="Sub Jail, Kishanganj">Sub Jail, Kishanganj</option>
+    <option value="Sub Jail, Nagaur">Sub Jail, Nagaur</option>
+    <option value="Sub Jail, Pali">Sub Jail, Pali</option>
+    <option value="Sub Jail, Sawai Madhopur">Sub Jail, Sawai Madhopur</option>
+    <option value="Sub Jail, Umaria">Sub Jail, Umaria</option>
+  </optgroup>
+
+  <!-- Special Jails -->
+  <optgroup label="Special Jails">
+    <option value="Special Jail, Jodhpur">Special Jail, Jodhpur</option>
+    <option value="Special Jail, Ajmer">Special Jail, Ajmer</option>
+    <option value="Special Jail, Kota">Special Jail, Kota</option>
+  </optgroup>
+
+<optgroup label="Sikkim">Sikkim</optgroup>
+  <!-- State Jails -->
+  <optgroup label="State Jails">
+    <option value="Sikkim State Jail, Gangtok">Sikkim State Jail, Gangtok</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="Rongneck Jail, Gangtok">Rongneck Jail, Gangtok</option>
+  </optgroup>
+
+ 
+<optgroup label="Telangana">Telangana</optgroup>
+  <!-- Central Prisons -->
+  <optgroup label="Central Prisons">
+    <option value="Central Prison, Cherlapalli">Central Prison, Cherlapalli</option>
+    <option value="Central Prison, Warangal">Central Prison, Warangal</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Adilabad">District Jail, Adilabad</option>
+    <option value="District Jail, Karimnagar">District Jail, Karimnagar</option>
+    <option value="District Jail, Khammam">District Jail, Khammam</option>
+    <option value="District Jail, Mahabubnagar">District Jail, Mahabubnagar</option>
+    <option value="District Jail, Medak">District Jail, Medak</option>
+    <option value="District Jail, Nalgonda">District Jail, Nalgonda</option>
+    <option value="District Jail, Nizamabad">District Jail, Nizamabad</option>
+    <option value="District Jail, Ranga Reddy">District Jail, Ranga Reddy</option>
+    <option value="District Jail, Warangal">District Jail, Warangal</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Asifabad">Sub Jail, Asifabad</option>
+    <option value="Sub Jail, Luxettipet">Sub Jail, Luxettipet</option>
+    <option value="Sub Jail, Nirmal">Sub Jail, Nirmal</option>
+    <option value="Sub Jail, Huzurabad">Sub Jail, Huzurabad</option>
+    <option value="Sub Jail, Jagtial">Sub Jail, Jagtial</option>
+    <option value="Sub Jail, Sathupally">Sub Jail, Sathupally</option>
+    <option value="Sub Jail, Madhira">Sub Jail, Madhira</option>
+    <option value="Sub Jail, Yellandu">Sub Jail, Yellandu</option>
+    <option value="Sub Jail, Bhadrachalam">Sub Jail, Bhadrachalam</option>
+    <option value="Sub Jail, Nagarkurnool">Sub Jail, Nagarkurnool</option>
+    <option value="Sub Jail, Kalwakurthy">Sub Jail, Kalwakurthy</option>
+    <option value="Sub Jail, Kandi (V), Sangareddy (M), Medak">Sub Jail, Kandi (V), Sangareddy (M), Medak</option>
+    <option value="Sub Jail, Medak">Sub Jail, Medak</option>
+    <option value="Sub Jail, Jogipet">Sub Jail, Jogipet</option>
+    <option value="Sub Jail, Siddipet">Sub Jail, Siddipet</option>
+    <option value="Sub Jail, Suyapet">Sub Jail, Suyapet</option>
+    <option value="Sub Jail, Miryalaguda">Sub Jail, Miryalaguda</option>
+    <option value="Sub Jail, Bhongir">Sub Jail, Bhongir</option>
+    <option value="Sub Jail, Deverakonda">Sub Jail, Deverakonda</option>
+    <option value="Sub Jail, Huzurnagar">Sub Jail, Huzurnagar</option>
+    <option value="Sub Jail, Bodhan">Sub Jail, Bodhan</option>
+    <option value="Sub Jail, Kamareddy">Sub Jail, Kamareddy</option>
+    <option value="Sub Jail, Armoor">Sub Jail, Armoor</option>
+    <option value="Sub Jail, Pargi">Sub Jail, Pargi</option>
+
+  </optgroup>
+  
+<optgroup label="Tripura">Tripura</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Bishalgarh">Central Jail, Bishalgarh</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Kailashahar">District Jail, Kailashahar</option>
+    <option value="District Jail, Udaipur">District Jail, Udaipur</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Sub Jail, Dharmanagar">Sub Jail, Dharmanagar</option>
+    <option value="Sub Jail, Kamalpur">Sub Jail, Kamalpur</option>
+    <option value="Sub Jail, Kanchanpur">Sub Jail, Kanchanpur</option>
+    <option value="Sub Jail, Khowai">Sub Jail, Khowai</option>
+    <option value="Sub Jail, Sonamura">Sub Jail, Sonamura</option>
+    <option value="Sub Jail, Amarpur">Sub Jail, Amarpur</option>
+    <option value="Sub Jail, Belonia">Sub Jail, Belonia</option>
+ 
+  </optgroup>
+ 
+<optgroup label="Uttar Pradesh">Uttar Pradesh</optgroup>
+ <optgroup label="Central Prisons">
+    <option value="Central Prison, Agra">Central Prison, Agra</option>
+    <option value="Central Prison, Ayodhya">Central Prison, Ayodhya</option>
+    <option value="Central Prison, Etawah">Central Prison, Etawah</option>
+    <option value="Central Prison, Gorakhpur">Central Prison, Gorakhpur</option>
+    <option value="Central Prison, Naini, Allahabad">Central Prison, Naini, Allahabad</option>
+    <option value="Central Prison, Varanasi">Central Prison, Varanasi</option>
+  </optgroup>
+  
+   <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Aligarh">District Jail, Aligarh</option>
+    <option value="District Jail, Allahabad">District Jail, Allahabad</option>
+    <option value="District Jail, Amethi">District Jail, Amethi</option>
+    <option value="District Jail, Amroha">District Jail, Amroha</option>
+    <option value="District Jail, Ayodhya">District Jail, Ayodhya</option>
+    <option value="District Jail, Azamgarh">District Jail, Azamgarh</option>
+    <option value="District Jail, Badaun">District Jail, Badaun</option>
+    <option value="District Jail, Baghpat">District Jail, Baghpat</option>
+    <option value="District Jail, Bahraich">District Jail, Bahraich</option>
+    <option value="District Jail, Ballia">District Jail, Ballia</option>
+    <option value="District Jail, Balrampur">District Jail, Balrampur</option>
+    <option value="District Jail, Banda">District Jail, Banda</option>
+    <option value="District Jail, Barabanki">District Jail, Barabanki</option>
+    <option value="District Jail, Bareilly">District Jail, Bareilly</option>
+    <option value="District Jail, Basti">District Jail, Basti</option>
+    <option value="District Jail, Bhadohi">District Jail, Bhadohi</option>
+    <option value="District Jail, Bijnor">District Jail, Bijnor</option>
+    <option value="District Jail, Budaun">District Jail, Budaun</option>
+    <option value="District Jail, Bulandshahr">District Jail, Bulandshahr</option>
+    <option value="District Jail, Chandauli">District Jail, Chandauli</option>
+    <option value="District Jail, Chitrakoot">District Jail, Chitrakoot</option>
+    <option value="District Jail, Deoria">District Jail, Deoria</option>
+    <option value="District Jail, Etah">District Jail, Etah</option>
+    <option value="District Jail, Faizabad">District Jail, Faizabad</option>
+    <option value="District Jail, Farrukhabad">District Jail, Farrukhabad</option>
+    <option value="District Jail, Fatehpur">District Jail, Fatehpur</option>
+    <option value="District Jail, Firozabad">District Jail, Firozabad</option>
+    <option value="District Jail, Gautam Budh Nagar">District Jail, Gautam Budh Nagar</option>
+    <option value="District Jail, Ghaziabad">District Jail, Ghaziabad</option>
+    <option value="District Jail, Gonda">District Jail, Gonda</option>
+    <option value="District Jail, Gorakhpur">District Jail, Gorakhpur</option>
+    <option value="District Jail, Hamirpur">District Jail, Hamirpur</option>
+    <option value="District Jail, Hardoi">District Jail, Hardoi</option>
+    <option value="District Jail, Hathras">District Jail, Hathras</option>
+    <option value="District Jail, Jalaun">District Jail, Jalaun</option>
+    <option value="District Jail, Jaunpur">District Jail, Jaunpur</option>
+    <option value="District Jail, Jhansi">District Jail, Jhansi</option>
+    <option value="District Jail, Kanpur Dehat">District Jail, Kanpur Dehat</option>
+	 <option value="District Jail, Kaushambi">District Jail, Kaushambi</option>
+        <option value="District Jail, Kheri">District Jail, Kheri</option>
+        <option value="District Jail, Kushinagar">District Jail, Kushinagar</option>
+        <option value="District Jail, Lalitpur">District Jail, Lalitpur</option>
+        <option value="District Jail, Lucknow">District Jail, Lucknow</option>
+        <option value="District Jail, Mahoba">District Jail, Mahoba</option>
+        <option value="District Jail, Mainpuri">District Jail, Mainpuri</option>
+        <option value="District Jail, Mathura">District Jail, Mathura</option>
+        <option value="District Jail, Mau">District Jail, Mau</option>
+        <option value="District Jail, Meerut">District Jail, Meerut</option>
+        <option value="District Jail, Mirzapur">District Jail, Mirzapur</option>
+        <option value="District Jail, Moradabad">District Jail, Moradabad</option>
+        <option value="District Jail, Muzaffarnagar">District Jail, Muzaffarnagar</option>
+        <option value="District Jail, Nainital">District Jail, Nainital</option>
+        <option value="District Jail, Pilibhit">District Jail, Pilibhit</option>
+        <option value="District Jail, Pratapgarh">District Jail, Pratapgarh</option>
+        <option value="District Jail, Raebareli">District Jail, Raebareli</option>
+        <option value="District Jail, Rampur">District Jail, Rampur</option>
+        <option value="District Jail, Saharanpur">District Jail, Saharanpur</option>
+        <option value="District Jail, Sambhal">District Jail, Sambhal</option>
+        <option value="District Jail, Sant Kabir Nagar">District Jail, Sant Kabir Nagar</option>
+        <option value="District Jail, Sant Ravidas Nagar">District Jail, Sant Ravidas Nagar</option>
+        <option value="District Jail, Shahjahanpur">District Jail, Shahjahanpur</option>
+        <option value="District Jail, Shamli">District Jail, Shamli</option>
+        <option value="District Jail, Shravasti">District Jail, Shravasti</option>
+        <option value="District Jail, Sidharthnagar">District Jail, Sidharthnagar</option>
+        <option value="District Jail, Sitapur">District Jail, Sitapur</option>
+        <option value="District Jail, Sonbhadra">District Jail, Sonbhadra</option>
+        <option value="District Jail, Sultanpur">District Jail, Sultanpur</option>
+        <option value="District Jail, Unnao">District Jail, Unnao</option>
+        <option value="District Jail, Varanasi">District Jail, Varanasi</option>
+        <option value="Model Jail, Lucknow">Model Jail, Lucknow</option>
+        <option value="Nari Bandi Niketan, Lucknow">Nari Bandi Niketan, Lucknow</option>
+        <option value="Kishore Sadan, Bareilly">Kishore Sadan, Bareilly</option>
+		        <option value="Sub Jail, Deoband">Sub Jail, Deoband</option>
+        <option value="Sub Jail, Gyanpur">Sub Jail, Gyanpur</option>
+    </optgroup>
+ 
+<optgroup label="Uttarakhand">Uttarakhand</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Sitarganj">Central Jail, Sitarganj</option>
+  </optgroup>
+
+  <!-- District Jails -->
+  <optgroup label="District Jails">
+    <option value="District Jail, Dehradun">District Jail, Dehradun</option>
+    <option value="District Jail, Haridwar">District Jail, Haridwar</option>
+    <option value="District Jail, Tehri">District Jail, Tehri</option>
+    <option value="District Jail, Chamoli">District Jail, Chamoli</option>
+    <option value="District Jail, Pauri">District Jail, Pauri</option>
+    <option value="District Jail, Nainital">District Jail, Nainital</option>
+  </optgroup>
+ </optgroup>
+ 
+<optgroup label="West Bengal">West Bengal</optgroup>
+  <!-- Central Jails -->
+  <optgroup label="Central Jails">
+    <option value="Central Jail, Dum Dum">Central Jail, Dum Dum</option>
+    <option value="Central Jail, Presidency, Alipore">Central Jail, Presidency, Alipore</option>
+    <option value="Central Jail, Burdwan">Central Jail, Burdwan</option>
+    <option value="Central Jail, Jalpaiguri">Central Jail, Jalpaiguri</option>
+    <option value="Central Jail, Berhampore">Central Jail, Berhampore</option>
+    <option value="Central Jail, Midnapore">Central Jail, Midnapore</option>
+  </optgroup>
+
+  <!-- Sub Jails -->
+  <optgroup label="Sub Jails">
+    <option value="Arambag Sub-Correctional Home">Arambag Sub-Correctional Home</option>
+    <option value="Barrackpore Special Correctional Home">Barrackpore Special Correctional Home</option>
+    <option value="Basirhat Sub-Correctional Home">Basirhat Sub-Correctional Home</option>
+    <option value="Bishnupur Sub-Correctional Home">Bishnupur Sub-Correctional Home</option>
+    <option value="Bolpur Sub-Correctional Home">Bolpur Sub-Correctional Home</option>
+    <option value="Contai Sub-Correctional Home">Contai Sub-Correctional Home</option>
+    <option value="Dinhata Sub-Correctional Home">Dinhata Sub-Correctional Home</option>
+    <option value="Durgapur Sub-Correctional Home">Durgapur Sub-Correctional Home</option>
+    <option value="Ghatal Sub-Correctional Home">Ghatal Sub-Correctional Home</option>
+    <option value="Howrah District Correctional Home">Howrah District Correctional Home</option>
+    <option value="Alipore Women's Correctional Home">Alipore Women's Correctional Home</option>
+    <option value="Krishnanagar District Correctional Home">Krishnanagar District Correctional Home</option>
+    <option value="Burdwan District Correctional Home">Burdwan District Correctional Home</option>
+    <option value="Suri District Correctional Home">Suri District Correctional Home</option>
+    <option value="Midnapore District Correctional Home">Midnapore District Correctional Home</option>
+    <option value="Midnapore Open Correctional Home">Midnapore Open Correctional Home</option>
+    <option value="Bankura District Correctional Home">Bankura District Correctional Home</option>
+    <option value="Berhampore District Correctional Home">Berhampore District Correctional Home</option>
+    <option value="Balurghat District Correctional Home">Balurghat District Correctional Home</option>
+    <option value="Jalpaiguri District Correctional Home">Jalpaiguri District Correctional Home</option>
+   
+  </optgroup>
+                 
+				 
+				<select name="identity_proof_type" required>
+				<Select
+                    <option value="identity_proof">Identity Proof</option>
+                    <option value="aadhar_id">AADHAR ID</option>
+                    <option value="driving_license">Driving License</option>
+                    <option value="pan_card">PAN card</option>
+                    <option value="voter_id">Voter ID</option>
+                    <option value="none">None</option>
+                </select>
+				<label for="CNR Number">CNR Number :</label>
+              <input type="text" name="CNR 16-digit Number" placeholder="CNR 16-digit Number" required class="form-input">
+				  </select>
+				<br> <label for="Email id">Email id:</label></br>
+                <input type="email" name="email" placeholder="abc@example.com" required>
+				<br> <label for="Contact No">Contact No</label></br>
+                <input type="tel" name="Enter your Mobile Number" placeholder="Enter your Mobile Number" required>
+                 <a href="login2.html"><button type="button" class="Signup"id="Signup">Signup</button></a>
+
+    <script>
+        const dashboardButton = document.getElementById('dashboard-button');
+        const menu = document.getElementById('menu');
+        const loginLink = document.getElementById('login-link');
+        const SignupLink = document.getElementById('Signup-link');
+        const visitorDetailsLink = document.getElementById('visitor-details-link');
+        const loginForm = document.getElementById('login-form');
+        const visitorDetailsForm = document.getElementById('visitor-details-form');
+        const welcomeMessage = document.getElementById('welcome-message');
+
+        dashboardButton.addEventListener('click', () => {
+            if (menu.style.left === '0px') {
+                menu.style.left = '-200px';
+            } else {
+                menu.style.left = '0px';
+            }
+        });
+
+        loginLink.addEventListener('click', () => {
+            loginForm.style.display = 'block';
+            visitorDetailsForm.style.display = 'none';
+        });
+
+        visitorDetailsLink.addEventListener('click', () => {
+            visitorDetailsForm.style.display = 'block';
+            loginForm.style.display = 'none';
+        });
+		    document.getElementById("Signup").addEventListener("click", function() {
+            window.open("login2.html", "_blank");
+        });
+
+
+        const aboutLink = document.querySelector('a[href="about.html"]');
+        aboutLink.addEventListener('click', () => {
+            welcomeMessage.textContent = 'Welcome to my website!';
+        });
+    </script>
+</body>
+</html>
